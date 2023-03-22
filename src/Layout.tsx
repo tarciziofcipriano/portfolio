@@ -2,24 +2,23 @@ import {
   Box,
   Container,
   CssBaseline,
-  Divider,
   Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Typography,
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import {
   ABOUT_ME,
-  ABOUT_THE_PORTIFOLIO,
+  ABOUT_THE_PORTFOLIO,
   CONTACT,
   HOME,
   PROJECTS,
 } from "./routes/constants";
-import Header from "./pages/Header";
+import Header from "./components/Header";
+import { useTranslation } from "react-i18next";
 
 interface LayoutProps {
   children: JSX.Element;
@@ -28,32 +27,24 @@ interface LayoutProps {
 
 const drawerWidth = 240;
 
-const navItems = [
-  { name: "Home", link: HOME },
-  { name: "About me", link: ABOUT_ME },
-  { name: "About the portfolio", link: ABOUT_THE_PORTIFOLIO },
-  { name: "Projects", link: PROJECTS },
-  { name: "Contact", link: CONTACT },
-];
-
 const Layout = ({ children, window }: LayoutProps) => {
+  const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const navItems = [
+    { name: t("BUTTON.HOME_PAGE"), link: HOME },
+    { name: t("TEXT.ABOUT_ME"), link: ABOUT_ME },
+    { name: t("TEXT.ABOUT_THE_PORTFOLIO"), link: ABOUT_THE_PORTFOLIO },
+    { name: t("TEXT.PROJECTS"), link: PROJECTS },
+    { name: t("TEXT.CONTACT"), link: CONTACT },
+  ];
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography
-        variant="h6"
-        sx={{ my: 2, textDecoration: "inherit" }}
-        component={Link}
-        to={HOME}
-      >
-        HOME
-      </Typography>
-      <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
@@ -74,7 +65,7 @@ const Layout = ({ children, window }: LayoutProps) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", placeContent: "center" }}>
       <CssBaseline />
       <Header handleDrawerToggle={handleDrawerToggle} navItems={navItems} />
       <Box component="nav">

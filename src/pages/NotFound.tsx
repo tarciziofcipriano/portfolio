@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { Home as HomeIcon } from "@mui/icons-material";
 import { Button, Divider, Grid, Typography } from "@mui/material";
 import { HOME } from "../routes/constants";
+import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   return (
     <Grid
       container
@@ -24,12 +27,12 @@ const NotFound = () => {
           gutterBottom
           sx={{ textTransform: "uppercase" }}
         >
-          Page not found
+          {t("TEXT.PAGE_NOT_FOUND_TITLE")}
         </Typography>
       </Grid>
       <Grid item>
         <Typography variant="h5" gutterBottom color="text.secondary">
-          Page not found
+          {t("TEXT.PAGE_NOT_FOUND_MESSAGE")}
         </Typography>
         <Divider light sx={{ m: 3 }} />
       </Grid>
@@ -41,7 +44,7 @@ const NotFound = () => {
           component={Link}
           to={HOME}
         >
-          Home
+          {t("BUTTON.HOME_PAGE")}
         </Button>
       </Grid>
     </Grid>

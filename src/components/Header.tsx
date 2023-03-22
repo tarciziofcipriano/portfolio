@@ -1,14 +1,8 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import { Menu as MenuIcon } from "@mui/icons-material";
+import { AppBar, Box, Button, IconButton, Toolbar } from "@mui/material";
+import { Home as HomeIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { HOME } from "../routes/constants";
+import LanguageSelector from "./LanguageSelector";
 
 interface HeaderProps {
   handleDrawerToggle: () => void;
@@ -21,28 +15,45 @@ interface HeaderProps {
 const Header = ({ handleDrawerToggle, navItems }: HeaderProps) => {
   return (
     <AppBar component="nav">
-      <Toolbar>
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         <IconButton
           color="inherit"
           aria-label="open drawer"
           edge="start"
           onClick={handleDrawerToggle}
-          sx={{ mr: 2, display: { sm: "none" } }}
+          sx={{
+            mr: 2,
+            flexGrow: 1,
+            display: { sm: "none" },
+            placeContent: "start",
+          }}
         >
           <MenuIcon />
         </IconButton>
-        <Typography
-          variant="h6"
+        <Box sx={{ display: { sm: "none" } }}>
+          <LanguageSelector isMenu />
+        </Box>
+
+        <Box
           sx={{
+            mr: 2,
             flexGrow: 1,
-            display: { xs: "none", sm: "block" },
-            textDecoration: "inherit",
+            display: { xs: "none", md: "flex" },
           }}
-          component={Link}
-          to={HOME}
         >
-          HOME
-        </Typography>
+          <Box
+            component={Link}
+            to={HOME}
+            sx={{
+              textDecoration: "none",
+            }}
+          >
+            <HomeIcon
+              fontSize="large"
+              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
+          </Box>
+        </Box>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navItems.map((item) => (
             <Button
@@ -54,6 +65,7 @@ const Header = ({ handleDrawerToggle, navItems }: HeaderProps) => {
               {item.name}
             </Button>
           ))}
+          <LanguageSelector isMenu />
         </Box>
       </Toolbar>
     </AppBar>

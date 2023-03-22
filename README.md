@@ -1,14 +1,15 @@
-# Portifólio
+# Portfólio
 
 ## O projeto
 
-Este é a estrutura do portifólio de Tarcizio Cipriano
+Este é a estrutura do portfólio de Tarcizio Cipriano
 
-### Técnologias utilizadas
+### Tecnologias utilizadas
 
 - [React](https://reactjs.org/)
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [i18next](https://react.i18next.com/)
 
 ## Pré-requisitos
 

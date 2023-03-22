@@ -1,7 +1,10 @@
 import { Box } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  return <Box>Projects</Box>;
+  const { t } = useTranslation();
+
+  return <Box>{t("TEXT.PROJECTS")}</Box>;
 };
 
 export default Projects;

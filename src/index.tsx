@@ -1,18 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import Router from "./routes";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
+import "./translations";
+
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Layout>
         <Router />
       </Layout>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
