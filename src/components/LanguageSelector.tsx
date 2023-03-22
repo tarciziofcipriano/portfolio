@@ -1,6 +1,5 @@
 import React from "react";
 
-import { ArrowDropDown as ArrowDropDownIcon } from "@mui/icons-material";
 import { Button, Menu, MenuItem } from "@mui/material";
 import i18n from "i18next";
 
