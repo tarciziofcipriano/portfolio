@@ -1,12 +1,14 @@
 import {
   Box,
   Container,
+  createTheme,
   CssBaseline,
   Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
+  ThemeProvider,
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -27,9 +29,30 @@ interface LayoutProps {
 
 const drawerWidth = 240;
 
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+
 const Layout = ({ children, window }: LayoutProps) => {
   const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mode, setMode] = React.useState<"light" | "dark">("light");
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
+
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+        },
+      }),
+    [mode]
+  );
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -65,35 +88,43 @@ const Layout = ({ children, window }: LayoutProps) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", placeContent: "center" }}>
-      <CssBaseline />
-      <Header handleDrawerToggle={handleDrawerToggle} navItems={navItems} />
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </Box>
-      <Box component="main" sx={{ p: 3 }}>
-        <Container maxWidth="xl" sx={{ pt: 10 }}>
-          {children}
-        </Container>
-      </Box>
-    </Box>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <Box sx={{ display: "flex", placeContent: "center" }}>
+          <CssBaseline />
+          <Header
+            handleDrawerToggle={handleDrawerToggle}
+            navItems={navItems}
+            colorModeContext={ColorModeContext}
+          />
+          <Box component="nav">
+            <Drawer
+              container={container}
+              variant="temporary"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true,
+              }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
+            >
+              {drawer}
+            </Drawer>
+          </Box>
+          <Box component="main" sx={{ p: 3 }}>
+            <Container maxWidth="xl" sx={{ pt: 10 }}>
+              {children}
+            </Container>
+          </Box>
+        </Box>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 };
 
