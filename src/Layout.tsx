@@ -12,7 +12,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   ABOUT_ME,
-  ABOUT_THE_PORTFOLIO,
+  PORTFOLIO,
   CONTACT,
   HOME,
   PROJECTS,
@@ -38,7 +38,7 @@ const Layout = ({ children, window }: LayoutProps) => {
   const navItems = [
     { name: t("BUTTON.HOME_PAGE"), link: HOME },
     { name: t("TEXT.ABOUT_ME"), link: ABOUT_ME },
-    { name: t("TEXT.ABOUT_THE_PORTFOLIO"), link: ABOUT_THE_PORTFOLIO },
+    { name: t("TEXT.PORTFOLIO"), link: PORTFOLIO },
     { name: t("TEXT.PROJECTS"), link: PROJECTS },
     { name: t("TEXT.CONTACT"), link: CONTACT },
   ];

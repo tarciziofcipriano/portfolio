@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const AboutThePortfolio = () => {
   const { t } = useTranslation();
 
-  return <Box>{t("TEXT.ABOUT_THE_PORTFOLIO")}</Box>;
+  return <Box>{t("TEXT.PORTFOLIO")}</Box>;
 };
 
 export default AboutThePortfolio;
