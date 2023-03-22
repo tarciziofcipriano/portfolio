@@ -13,7 +13,7 @@ Este é a estrutura do portifólio de Tarcizio Cipriano
 ## Pré-requisitos
 
 - [Node](https://nodejs.org/)
-- [npm](https://www.npmjs.com/
+- [npm](https://www.npmjs.com/)
 - [Yarn](https://yarnpkg.com/)
 
 ### Instalando as dependências
