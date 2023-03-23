@@ -28,5 +28,12 @@ export const theme = (mode: PaletteMode | undefined) =>
           },
         },
       },
+      /*   MuiPaper: {
+        defaultProps: {
+          sx: {
+            backgroundColor: mode === "light" ? "#5E72E4" : "black",
+          },
+        },
+      }, */
     },
   });

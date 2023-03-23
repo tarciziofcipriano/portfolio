@@ -3,6 +3,7 @@ import {
   Container,
   CssBaseline,
   Drawer,
+  Grid,
   List,
   ListItem,
   ListItemButton,
@@ -21,6 +22,7 @@ import {
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import { theme } from "./theme";
+import { loginBackground } from "./BackgroundImages";
 
 interface LayoutProps {
   children: JSX.Element;
@@ -58,9 +60,24 @@ const Layout = ({ children, window }: LayoutProps) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
+      <List sx={{ pt: 2 }}>
+        {navItems.map((item, i) => (
+          <ListItem
+            key={item.name}
+            disablePadding
+            sx={
+              i !== 4
+                ? {
+                    borderBottom:
+                      mode === "light"
+                        ? "1px solid #6f81e6"
+                        : "1px solid #18181c",
+                    color: "white",
+                    p: 1,
+                  }
+                : { p: 1, color: "white" }
+            }
+          >
             <ListItemButton
               sx={{ textAlign: "center" }}
               component={Link}
@@ -107,17 +124,27 @@ const Layout = ({ children, window }: LayoutProps) => {
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
                   width: drawerWidth,
+                  backgroundColor: mode === "light" ? "#5E72E4" : "black",
                 },
               }}
             >
               {drawer}
             </Drawer>
           </Box>
-          <Box component="main" sx={{ p: 3 }}>
-            <Container maxWidth="xl" sx={{ pt: 10 }}>
-              {children}
-            </Container>
-          </Box>
+          <Container disableGutters maxWidth={"100%" as any}>
+            <Grid
+              container
+              alignItems="center"
+              justifyContent="center"
+              sx={{
+                height: "100vh",
+                backgroundImage: loginBackground,
+                backgroundSize: "cover",
+              }}
+            >
+              <Grid item>{children}</Grid>
+            </Grid>
+          </Container>
         </Box>
       </ThemeProvider>
     </ColorModeContext.Provider>
