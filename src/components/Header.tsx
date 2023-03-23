@@ -1,14 +1,5 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-} from "@mui/material";
-import {
-  Home as HomeIcon,
-  Menu as MenuIcon,
-} from "@mui/icons-material";
+import { AppBar, Box, IconButton, Tab, Tabs, Toolbar } from "@mui/material";
+import { Home as HomeIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { HOME } from "../routes/constants";
 import LanguageSelector from "./LanguageSelector";
@@ -30,6 +21,11 @@ const Header = ({
   colorModeContext,
 }: HeaderProps) => {
   const colorMode = React.useContext(colorModeContext);
+  const [menuOption, setMenuOption] = React.useState(0);
+
+  const handleChange = (_: any, value: number) => {
+    setMenuOption(value);
+  };
 
   return (
     <AppBar component="nav" sx={{ borderRadius: 0 }}>
@@ -50,6 +46,9 @@ const Header = ({
         </IconButton>
         <Box sx={{ display: { sm: "none" } }}>
           <LanguageSelector isMenu />
+        </Box>
+        <Box sx={{ display: { sm: "none" } }}>
+          <ThemeSwitch onClick={colorMode.toggleColorMode} />
         </Box>
         <Box
           sx={{
@@ -76,16 +75,35 @@ const Header = ({
           </Box>
         </Box>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          {navItems.map((item) => (
-            <Button
-              key={item.name}
-              sx={{ color: "#fff" }}
-              component={Link}
-              to={item.link}
-            >
-              {item.name}
-            </Button>
-          ))}
+          <Tabs
+            value={menuOption}
+            onChange={handleChange}
+            sx={{
+              "& .MuiTab-root.Mui-selected": {
+                color: "#E0E0E0",
+              },
+              display: "inline-flex",
+            }}
+            indicatorColor="secondary"
+          >
+            {navItems.map((item) => (
+              <Tab
+                label={item.name}
+                disableRipple
+                sx={{
+                  pt: 0,
+                  pb: 0,
+                  pr: 2,
+                  pl: 0,
+                  fontSize: 12.5,
+                  fontWeight: "bold",
+                  color: "white",
+                }}
+                component={Link}
+                to={item.link}
+              />
+            ))}
+          </Tabs>
           <LanguageSelector isMenu />
           <ThemeSwitch onClick={colorMode.toggleColorMode} />
         </Box>

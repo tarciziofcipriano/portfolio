@@ -49,6 +49,9 @@ const Layout = ({ children, window }: LayoutProps) => {
       createTheme({
         palette: {
           mode,
+          secondary: {
+            main: "#FFFF",
+          },
         },
       }),
     [mode]
@@ -90,7 +93,13 @@ const Layout = ({ children, window }: LayoutProps) => {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <Box sx={{ display: "flex", placeContent: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            placeContent: "center",
+            fontFamily: "Open Sans",
+          }}
+        >
           <CssBaseline />
           <Header
             handleDrawerToggle={handleDrawerToggle}
