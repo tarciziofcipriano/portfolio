@@ -1,10 +1,14 @@
-import { Box } from "@mui/material";
+import { Box, Slide } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
   const { t } = useTranslation();
 
-  return <Box>{t("TEXT.ABOUT_ME")}</Box>;
+  return (
+    <Slide direction="down" in mountOnEnter unmountOnExit>
+      <Box>{t("TEXT.ABOUT_ME")}</Box>
+    </Slide>
+  );
 };
 
 export default AboutMe;
