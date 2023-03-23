@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  createTheme,
   CssBaseline,
   Drawer,
   List,
@@ -21,6 +20,7 @@ import {
 } from "./routes/constants";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
+import { theme } from "./theme";
 
 interface LayoutProps {
   children: JSX.Element;
@@ -42,19 +42,6 @@ const Layout = ({ children, window }: LayoutProps) => {
       },
     }),
     []
-  );
-
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode,
-          secondary: {
-            main: "#FFFF",
-          },
-        },
-      }),
-    [mode]
   );
 
   const handleDrawerToggle = () => {
@@ -92,7 +79,7 @@ const Layout = ({ children, window }: LayoutProps) => {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme(mode)}>
         <Box
           sx={{
             display: "flex",

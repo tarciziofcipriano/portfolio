@@ -28,7 +28,7 @@ const Header = ({
   };
 
   return (
-    <AppBar component="nav" sx={{ borderRadius: 0 }}>
+    <AppBar component="nav">
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <IconButton
           color="inherit"
@@ -80,7 +80,7 @@ const Header = ({
             onChange={handleChange}
             sx={{
               "& .MuiTab-root.Mui-selected": {
-                color: "#E0E0E0",
+                color: "white",
               },
               display: "inline-flex",
             }}
@@ -95,7 +95,7 @@ const Header = ({
                   pb: 0,
                   pr: 2,
                   pl: 0,
-                  fontSize: 12.5,
+                  fontSize: 12,
                   fontWeight: "bold",
                   color: "white",
                 }}
