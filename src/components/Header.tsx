@@ -84,7 +84,9 @@ const Header = ({
               },
               display: "inline-flex",
             }}
-            indicatorColor="secondary"
+            TabIndicatorProps={{
+              style: { display: "none" },
+            }}
           >
             {navItems.map((item) => (
               <Tab

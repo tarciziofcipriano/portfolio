@@ -29,8 +29,6 @@ interface LayoutProps {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
-
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 const Layout = ({ children, window }: LayoutProps) => {
@@ -101,7 +99,6 @@ const Layout = ({ children, window }: LayoutProps) => {
           sx={{
             display: "flex",
             placeContent: "center",
-            fontFamily: "Open Sans",
           }}
         >
           <CssBaseline />
@@ -123,7 +120,7 @@ const Layout = ({ children, window }: LayoutProps) => {
                 display: { xs: "block", sm: "none" },
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
-                  width: drawerWidth,
+                  width: 240,
                   backgroundColor: mode === "light" ? "#5E72E4" : "black",
                 },
               }}
@@ -138,7 +135,7 @@ const Layout = ({ children, window }: LayoutProps) => {
               justifyContent="center"
               sx={{
                 height: "100vh",
-                backgroundImage: loginBackground,
+                backgroundImage: mode === "light" ? loginBackground : "none",
                 backgroundSize: "cover",
               }}
             >

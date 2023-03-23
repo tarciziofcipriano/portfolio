@@ -15,9 +15,6 @@ export const theme = (mode: PaletteMode | undefined) =>
       MuiTextField: {
         defaultProps: {
           color: "secondary",
-          sx: {
-            fontFamily: "Open Sans",
-          },
         },
       },
       MuiAppBar: {
@@ -28,12 +25,13 @@ export const theme = (mode: PaletteMode | undefined) =>
           },
         },
       },
-      /*   MuiPaper: {
+      MuiPaper: {
         defaultProps: {
+          elevation: 3,
           sx: {
-            backgroundColor: mode === "light" ? "#5E72E4" : "black",
+            borderRadius: 3,
           },
         },
-      }, */
+      },
     },
   });
