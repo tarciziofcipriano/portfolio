@@ -88,13 +88,12 @@ const Header = ({
           >
             {navItems.map((item) => (
               <Tab
+                key={item.name}
                 label={item.name}
                 disableRipple
                 sx={{
-                  pt: 0,
-                  pb: 0,
-                  pr: 2,
-                  pl: 0,
+                  p: 0,
+                  mr: 1,
                   fontSize: 12,
                   fontWeight: "bold",
                   color: "white",
