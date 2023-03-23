@@ -28,7 +28,7 @@ const Header = ({
   };
 
   return (
-    <AppBar component="nav">
+    <AppBar component="nav" sx={{ borderRadius: 0 }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <IconButton
           color="inherit"
