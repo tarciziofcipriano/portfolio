@@ -1,0 +1,21 @@
+.c3-legend-item {
+  fill: #FFFF;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.c3-chart-arc path {
+  stroke: #3A519D;
+}
+
+.c3-chart-arc text {
+  fill: #FFFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.c3-chart-arcs-title {
+  fill: #FFFF;
+  font-weight: bold;
+  font-size: 13.3px;
+}

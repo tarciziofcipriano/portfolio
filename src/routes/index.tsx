@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "../pages/AboutMe";
 import AboutThePortfolio from "../pages/Portfolio";
