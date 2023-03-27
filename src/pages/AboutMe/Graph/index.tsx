@@ -2,12 +2,15 @@ import React from "react";
 
 import "./index.css";
 import c3 from "c3";
+import { ThemeModeContext } from "../../../context/ThemeModeContext";
 
 interface GraphProps {
   title: string;
 }
 
 const Graph = ({ title }: GraphProps) => {
+  const { theme } = React.useContext(ThemeModeContext);
+
   React.useEffect(() => {
     c3.generate({
       padding: {
@@ -40,7 +43,9 @@ const Graph = ({ title }: GraphProps) => {
     });
   }, [title]);
 
-  return <div id="chart" />;
+  return (
+    <div id="chart" style={{ fill: theme === "light" ? "black" : "white" }} />
+  );
 };
 
 export default Graph;

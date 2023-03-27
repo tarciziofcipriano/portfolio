@@ -26,7 +26,6 @@ const Dashboard = () => {
         display="flex"
         justifyContent="center"
         textAlign="center"
-        sx={{ color: "white" }}
         container
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
@@ -54,7 +53,7 @@ const Dashboard = () => {
                 rel="noreferrer"
               >
                 <Tooltip title="Facebook">
-                  <IconButton style={{ color: "#FEFEFE" }}>
+                  <IconButton>
                     <FacebookIcon />
                   </IconButton>
                 </Tooltip>
@@ -67,7 +66,7 @@ const Dashboard = () => {
                 rel="noreferrer"
               >
                 <Tooltip title="LinkedIn">
-                  <IconButton style={{ color: "#FEFEFE" }}>
+                  <IconButton>
                     <LinkedInIcon />
                   </IconButton>
                 </Tooltip>
@@ -80,7 +79,7 @@ const Dashboard = () => {
                 rel="noreferrer"
               >
                 <Tooltip title="GitHub">
-                  <IconButton style={{ color: "#FEFEFE" }}>
+                  <IconButton>
                     <GitHubIcon />
                   </IconButton>
                 </Tooltip>
@@ -93,7 +92,7 @@ const Dashboard = () => {
                 rel="noreferrer"
               >
                 <Tooltip title="Instagram">
-                  <IconButton style={{ color: "#FEFEFE" }}>
+                  <IconButton>
                     <InstagramIcon />
                   </IconButton>
                 </Tooltip>

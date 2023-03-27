@@ -41,10 +41,10 @@ const AboutMe = () => {
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Box sx={{ color: "white" }} maxWidth={800} pl={2} pr={2} pt={8}>
+      <Box maxWidth={800} pl={2} pr={2} pt={8}>
         <Box display="flex" justifyContent="space-between" mb={3}>
           <Typography fontSize={36} fontWeight="bold">
-            {t("TEXT.ABOUT_ME")}:
+            {t("TEXT.ABOUT_ME")}
           </Typography>
           <Box alignSelf="center">
             <Button onClick={handlePrintPdf} size="small" variant="contained">
@@ -58,7 +58,6 @@ const AboutMe = () => {
             active={true}
             sx={{
               "& .MuiStepLabel-root .Mui-active": {
-                color: "secondary.main",
                 fontWeight: "bold",
                 fontSize: 19,
               },
@@ -67,7 +66,7 @@ const AboutMe = () => {
             <StepLabel>{training[0].label}:</StepLabel>
             <StepContent>
               {training[0].description.map((v) => (
-                <Box>
+                <Box key={v.title}>
                   <Typography pb={1}>{v.title}</Typography>
                 </Box>
               ))}

@@ -23,6 +23,7 @@ import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import { theme } from "./theme";
 import { loginBackground } from "./BackgroundImages";
+import { ThemeModeContext } from "./context/ThemeModeContext";
 
 interface LayoutProps {
   children: JSX.Element;
@@ -33,6 +34,7 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 const Layout = ({ children, window }: LayoutProps) => {
   const { t } = useTranslation();
+  const { setTheme } = React.useContext(ThemeModeContext);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mode, setMode] = React.useState<"light" | "dark">("light");
   const colorMode = React.useMemo(
@@ -43,6 +45,10 @@ const Layout = ({ children, window }: LayoutProps) => {
     }),
     []
   );
+
+  React.useEffect(() => {
+    setTheme(mode);
+  }, [mode, setTheme]);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
