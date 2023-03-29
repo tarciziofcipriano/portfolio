@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Grid,
   Slide,
   Step,
   StepContent,
@@ -41,41 +42,45 @@ const AboutMe = () => {
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Box maxWidth={800} pl={2} pr={2} pt={8}>
-        <Box display="flex" justifyContent="space-between" mb={3}>
-          <Typography fontSize={36} fontWeight="bold">
-            {t("TEXT.ABOUT_ME")}
-          </Typography>
-          <Box alignSelf="center">
-            <Button onClick={handlePrintPdf} size="small" variant="contained">
-              {t("TEXT.CURRICULUM")}
-            </Button>
+      <Grid display="flex" justifyContent="center" container pt="10%">
+        <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
+          <Box display="flex" justifyContent="space-between" mb={3}>
+            <Typography fontSize={36} fontWeight="bold">
+              {t("TEXT.ABOUT_ME")}
+            </Typography>
+            <Box alignSelf="center">
+              <Button onClick={handlePrintPdf} size="small" variant="contained">
+                {t("TEXT.CURRICULUM")}
+              </Button>
+            </Box>
           </Box>
-        </Box>
-        <Stepper orientation="vertical">
-          <Step
-            key={training[0].label}
-            active={true}
-            sx={{
-              "& .MuiStepLabel-root .Mui-active": {
-                fontWeight: "bold",
-                fontSize: 19,
-              },
-            }}
-          >
-            <StepLabel>{training[0].label}:</StepLabel>
-            <StepContent>
-              {training[0].description.map((v) => (
-                <Box key={v.title}>
-                  <Typography pb={1}>{v.title}</Typography>
-                </Box>
-              ))}
-            </StepContent>
-            <StepLabel>{training[1].label}:</StepLabel>
-          </Step>
-        </Stepper>
-        <Graph title={t("TEXT.YEARS_OF_EXPERIENCE")} />
-      </Box>
+          <Stepper orientation="vertical">
+            <Step
+              key={training[0].label}
+              active={true}
+              sx={{
+                "& .MuiStepLabel-root .Mui-active": {
+                  fontWeight: "bold",
+                  fontSize: 19,
+                },
+              }}
+            >
+              <StepLabel>{training[0].label}:</StepLabel>
+              <StepContent>
+                {training[0].description.map((v) => (
+                  <Box key={v.title}>
+                    <Typography pb={1}>{v.title}</Typography>
+                  </Box>
+                ))}
+              </StepContent>
+              <StepLabel>{training[1].label}:</StepLabel>
+            </Step>
+          </Stepper>
+          <Box>
+            <Graph title={t("TEXT.YEARS_OF_EXPERIENCE")} />
+          </Box>
+        </Grid>
+      </Grid>
     </Slide>
   );
 };

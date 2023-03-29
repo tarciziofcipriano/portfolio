@@ -27,6 +27,7 @@ const Dashboard = () => {
         justifyContent="center"
         textAlign="center"
         container
+        pt="20%"
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
           <Box>

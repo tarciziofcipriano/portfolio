@@ -3,7 +3,6 @@ import {
   Container,
   CssBaseline,
   Drawer,
-  Grid,
   List,
   ListItem,
   ListItemButton,
@@ -135,18 +134,17 @@ const Layout = ({ children, window }: LayoutProps) => {
             </Drawer>
           </Box>
           <Container disableGutters maxWidth={"100%" as any}>
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
+            <Box
               sx={{
                 height: "100vh",
                 backgroundImage: mode === "light" ? loginBackground : "none",
                 backgroundSize: "cover",
               }}
             >
-              <Grid item>{children}</Grid>
-            </Grid>
+              <Box pl={2} pr={2}>
+                {children}
+              </Box>
+            </Box>
           </Container>
         </Box>
       </ThemeProvider>
