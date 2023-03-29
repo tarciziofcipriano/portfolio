@@ -23,7 +23,6 @@ const Dashboard = () => {
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
       <Grid
-        display="flex"
         justifyContent="center"
         textAlign="center"
         container

@@ -6,10 +6,13 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 
 ### Tecnologias utilizadas
 
-- [React](https://reactjs.org/)
+- [ReactJS](https://reactjs.org/)
+- [React Router](https://reactrouter.com/en/main)
+- [React Context](https://react.dev/reference/react#context-hooks)
+- [React i18next](https://react.i18next.com/)
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
-- [i18next](https://react.i18next.com/)
+- [Heroku](https://www.heroku.com/)
 
 ## Pré-requisitos
 
