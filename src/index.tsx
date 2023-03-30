@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeModeProvider } from "./context/ThemeModeContext";
+import { ToastProvider } from "./context/ToastContext";
 import Layout from "./Layout";
 import Router from "./routes";
 
@@ -13,12 +14,14 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeModeProvider>
-        <Layout>
-          <Router />
-        </Layout>
-      </ThemeModeProvider>
-    </BrowserRouter>
+    <ToastProvider>
+      <BrowserRouter>
+        <ThemeModeProvider>
+          <Layout>
+            <Router />
+          </Layout>
+        </ThemeModeProvider>
+      </BrowserRouter>
+    </ToastProvider>
   </React.StrictMode>
 );

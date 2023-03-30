@@ -12,6 +12,7 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 - [React i18next](https://react.i18next.com/)
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [EmailJS](https://www.emailjs.com/)
 - [Heroku](https://www.heroku.com/)
 
 ## Pré-requisitos

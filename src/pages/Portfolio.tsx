@@ -44,21 +44,6 @@ const AboutThePortfolio = () => {
         icon: <CheckIcon color="success" />,
       },
       {
-        title: "React Router",
-        link: "https://reactrouter.com/en/main",
-        icon: <CheckIcon color="success" />,
-      },
-      {
-        title: "React Context",
-        link: "https://react.dev/reference/react#context-hooks",
-        icon: <CheckIcon color="success" />,
-      },
-      {
-        title: "React i18next",
-        link: "https://react.i18next.com/",
-        icon: <CheckIcon color="success" />,
-      },
-      {
         title: "Material-UI",
         link: "https://mui.com/",
         icon: <CheckIcon color="success" />,
@@ -66,6 +51,11 @@ const AboutThePortfolio = () => {
       {
         title: "Typescript",
         link: "https://www.typescriptlang.org/",
+        icon: <CheckIcon color="success" />,
+      },
+      {
+        title: "EmailJS",
+        link: "https://www.emailjs.com/",
         icon: <CheckIcon color="success" />,
       },
       {
