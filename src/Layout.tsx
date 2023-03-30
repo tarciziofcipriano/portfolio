@@ -21,7 +21,6 @@ import {
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import { theme } from "./theme";
-import { loginBackground } from "./BackgroundImages";
 import { ThemeModeContext } from "./context/ThemeModeContext";
 
 interface LayoutProps {
@@ -68,18 +67,7 @@ const Layout = ({ children, window }: LayoutProps) => {
           <ListItem
             key={item.name}
             disablePadding
-            sx={
-              i !== 4
-                ? {
-                    borderBottom:
-                      mode === "light"
-                        ? "1px solid #6f81e6"
-                        : "1px solid #18181c",
-                    color: "white",
-                    p: 1,
-                  }
-                : { p: 1, color: "white" }
-            }
+            sx={{ p: 1, color: "white" }}
           >
             <ListItemButton
               sx={{ textAlign: "center" }}
@@ -126,7 +114,7 @@ const Layout = ({ children, window }: LayoutProps) => {
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
                   width: 240,
-                  backgroundColor: mode === "light" ? "#5E72E4" : "black",
+                  backgroundColor: "#2F3645",
                 },
               }}
             >
@@ -136,9 +124,7 @@ const Layout = ({ children, window }: LayoutProps) => {
           <Container disableGutters maxWidth={"100%" as any}>
             <Box
               sx={{
-                height: "100vh",
-                backgroundImage: mode === "light" ? loginBackground : "none",
-                backgroundSize: "cover",
+                backgroundImage: mode === "light" ? "#F0F2F5" : "none",
               }}
             >
               <Box pl={2} pr={2}>

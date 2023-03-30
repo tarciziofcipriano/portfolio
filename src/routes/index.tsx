@@ -6,13 +6,7 @@ import Dashboard from "../pages/Dashboard";
 import NotFound from "../pages/NotFound";
 import Projects from "../pages/Projects";
 
-import {
-  HOME,
-  ABOUT_ME,
-  PORTFOLIO,
-  PROJECTS,
-  CONTACT,
-} from "./constants";
+import { HOME, ABOUT_ME, PORTFOLIO, PROJECTS, CONTACT } from "./constants";
 
 const Router = () => (
   <Routes>

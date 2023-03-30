@@ -19,6 +19,7 @@ export const theme = (mode: PaletteMode | undefined) =>
       },
       MuiAppBar: {
         defaultProps: {
+          color: mode === "light" ? "inherit" : "default",
           sx: {
             boxShadow:
               "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",

@@ -4,16 +4,18 @@ import { Home as HomeIcon } from "@mui/icons-material";
 import { Button, Divider, Grid, Typography } from "@mui/material";
 import { HOME } from "../routes/constants";
 import { useTranslation } from "react-i18next";
+import useIsMobile from "../hooks/useIsMobile";
 
 const NotFound = () => {
   const { t } = useTranslation();
+  const mobile = useIsMobile();
 
   return (
     <Grid
       container
       direction="column"
       alignItems="center"
-      sx={{ pt: 5, textAlign: "center" }}
+      sx={{ pt: mobile ? "20%" : "8%", textAlign: "center" }}
     >
       <Grid item>
         <Typography variant="h1" sx={{ fontSize: 180 }}>

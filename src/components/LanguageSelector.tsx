@@ -58,7 +58,7 @@ const LanguageSelector = ({ isMenu }: LanguageSelectorProps) => {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        sx={{ fontSize: isMenu ? 12 : 13, fontWeight: "bold", pr: 0, pl: 0 }}
+        sx={{ fontSize: isMenu ? 12 : 13, pr: 0, pl: 0 }}
       >
         <img
           loading="lazy"

@@ -5,6 +5,7 @@ import { HOME } from "../routes/constants";
 import LanguageSelector from "./LanguageSelector";
 import React, { Context } from "react";
 import ThemeSwitch from "./ThemeSwitch";
+import { ThemeModeContext } from "../context/ThemeModeContext";
 
 interface HeaderProps {
   handleDrawerToggle: () => void;
@@ -21,6 +22,7 @@ const Header = ({
   colorModeContext,
 }: HeaderProps) => {
   const colorMode = React.useContext(colorModeContext);
+  const { theme } = React.useContext(ThemeModeContext);
   const [menuOption, setMenuOption] = React.useState(0);
 
   const handleChange = (_: any, value: number) => {
@@ -60,16 +62,17 @@ const Header = ({
           <Box
             component={Link}
             to={HOME}
+            onClick={() => setMenuOption(0)}
             sx={{
               textDecoration: "none",
             }}
           >
             <HomeIcon
               fontSize="large"
+              color={theme === "light" ? "primary" : "secondary"}
               sx={{
                 display: { xs: "none", md: "flex" },
                 mr: 1,
-                color: "white",
               }}
             />
           </Box>
@@ -79,13 +82,7 @@ const Header = ({
             value={menuOption}
             onChange={handleChange}
             sx={{
-              "& .MuiTab-root.Mui-selected": {
-                color: "white",
-              },
               display: "inline-flex",
-            }}
-            TabIndicatorProps={{
-              style: { display: "none" },
             }}
           >
             {navItems.map((item) => (
@@ -98,7 +95,6 @@ const Header = ({
                   mr: 1,
                   fontSize: 12,
                   fontWeight: "bold",
-                  color: "white",
                 }}
                 component={Link}
                 to={item.link}

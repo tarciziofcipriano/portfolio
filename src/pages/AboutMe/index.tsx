@@ -51,7 +51,7 @@ const AboutMe = () => {
         display="flex"
         justifyContent="center"
         container
-        pt={mobile ? "20%" : "10%"}
+        pt={mobile ? "20%" : "8%"}
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
           <Box display="flex" justifyContent="space-between" mb={3}>
@@ -72,11 +72,11 @@ const AboutMe = () => {
           <Stepper orientation="vertical">
             {training.map((t) => (
               <Step key={t.label} active={true}>
-                <StepLabel>{t.label}</StepLabel>
+                <StepLabel>{t.label}:</StepLabel>
                 <StepContent>
                   {t.description &&
                     t.description.map((v) => (
-                      <Typography>{v.title}</Typography>
+                      <Typography key={v.title}>{v.title}</Typography>
                     ))}
                 </StepContent>
               </Step>

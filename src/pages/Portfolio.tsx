@@ -41,34 +41,34 @@ const AboutThePortfolio = () => {
       {
         title: "ReactJS",
         link: "https://reactjs.org/",
-        icon: <CheckIcon color="success" />,
+        icon: <CheckIcon />,
       },
       {
         title: "Material-UI",
         link: "https://mui.com/",
-        icon: <CheckIcon color="success" />,
+        icon: <CheckIcon />,
       },
       {
         title: "Typescript",
         link: "https://www.typescriptlang.org/",
-        icon: <CheckIcon color="success" />,
+        icon: <CheckIcon />,
       },
       {
         title: "EmailJS",
         link: "https://www.emailjs.com/",
-        icon: <CheckIcon color="success" />,
+        icon: <CheckIcon />,
       },
       {
         title: "Heroku",
         link: "https://www.heroku.com/",
-        icon: <CheckIcon color="success" />,
+        icon: <CheckIcon />,
       },
     ],
   };
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Grid justifyContent="center" container pt={mobile ? "20%" : "10%"}>
+      <Grid justifyContent="center" container pt={mobile ? "20%" : "8%"}>
         <Grid item xs={12} sm={12} md={8} lg={5} pl={1} pr={1}>
           <Box display="flex" mb={3}>
             <Box mt={0.45} alignSelf="center">
@@ -125,7 +125,7 @@ const AboutThePortfolio = () => {
           <List dense={true}>
             <ListItem sx={{ mt: 1 }}>
               <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
-                <Filter1Icon />
+                <Filter1Icon color="primary" />
               </ListItemAvatar>
               {t("TOAST.HEROKU")}
             </ListItem>
@@ -156,7 +156,7 @@ const AboutThePortfolio = () => {
               }
             >
               <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
-                <Filter2Icon />
+                <Filter2Icon color="primary" />
               </ListItemAvatar>
               <ListItemText primary={`${t("TOAST.PORTFOLIO_REPOSITORY")} :`} />
             </ListItem>
