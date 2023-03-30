@@ -174,7 +174,7 @@ export default {
         FILL_ALL_FIELDS:
           "Por favor, preencha todos os campos do formulário para a validação",
         HEROKU:
-          "O Heroku Foi utilizado para a hospedagem do repositório do Portfólio",
+          "O Heroku foi utilizado para a hospedagem do repositório do Portfólio",
         PORTFOLIO_REPOSITORY:
           "O repositório do Portfólio pode ser visualizado/baixado através do link",
       },

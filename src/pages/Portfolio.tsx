@@ -127,7 +127,7 @@ const AboutThePortfolio = () => {
               <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                 <Filter1Icon color="primary" />
               </ListItemAvatar>
-              {t("TOAST.HEROKU")}
+              <ListItemText primary={t("TOAST.HEROKU")} />
             </ListItem>
             <ListItem
               sx={{ mt: 2 }}
