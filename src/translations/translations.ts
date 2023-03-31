@@ -49,6 +49,7 @@ export default {
         DASHBOARD_TITLE: "Hi there, my name is Tarcizio Cipriano",
         DASHBOARD_SUBTITLE:
           "I'm a web developer, with main knowledge in technologies: ReactJS and TypeScript.",
+        LAST_UPDATE: "Last update",
         MAIN_TECHNOLOGIES: "Main technologies I use",
         MESSAGE: "Message",
         NAME: "Name",
@@ -118,6 +119,7 @@ export default {
         DASHBOARD_TITLE: "Hola, mi nombre es Tarcizio Cipriano",
         DASHBOARD_SUBTITLE:
           "Soy desarrollador web, con conocimiento principal en tecnologías: ReactJS y TypeScript.",
+        LAST_UPDATE: "Última actualización",
         MAIN_TECHNOLOGIES: "Principales tecnologías que utilizo",
         MESSAGE: "Mensaje",
         NAME: "Nombre",
@@ -189,6 +191,7 @@ export default {
         DASHBOARD_SUBTITLE:
           "Sou desenvolvedor web, com conhecimento principal nas tecnologias: ReactJS e TypeScript.",
         FULL_CURRICULUM: "Currículo Completo",
+        LAST_UPDATE: "Última atualização",
         MAIN_TECHNOLOGIES: "Principais tecnologias que utilizo",
         MESSAGE: "Mensagem",
         NAME: "Nome",

@@ -196,7 +196,7 @@ const AboutThePortfolio = () => {
                   <Filter3Icon color="primary" />
                 </ListItemAvatar>
                 <ListItemText
-                  primary="Última atualização:"
+                  primary={`${t("TEXT.LAST_UPDATE")}:`}
                   secondary="31/03/2023"
                 />
               </ListItem>
