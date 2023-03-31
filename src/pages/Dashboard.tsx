@@ -16,9 +16,11 @@ import {
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ABOUT_ME } from "../routes/constants";
+import useIsMobile from "../hooks/useIsMobile";
 
 const Dashboard = () => {
   const { t } = useTranslation();
+  const mobile = useIsMobile();
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
@@ -26,7 +28,7 @@ const Dashboard = () => {
         justifyContent="center"
         textAlign="center"
         container
-        pt="20%"
+        pt={mobile ? "20%" : "16%"}
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1} alignSelf="center">
           <Box>
@@ -107,7 +109,7 @@ const Dashboard = () => {
             style={{
               height: "340px",
               width: "275px",
-             borderRadius: "50%",
+              borderRadius: "50%",
             }}
           />
         </Grid>

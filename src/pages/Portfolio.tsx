@@ -3,6 +3,7 @@ import {
   Info as InfoIcon,
   Filter1 as Filter1Icon,
   Filter2 as Filter2Icon,
+  Filter3 as Filter3Icon,
   TableView as TableViewIcon,
 } from "@mui/icons-material";
 import {
@@ -23,6 +24,7 @@ type DescriptionProps = {
   title: string;
   link: string;
   icon: JSX.Element;
+  description: string;
 };
 
 interface TraningDescriptionProps {
@@ -41,41 +43,49 @@ const AboutThePortfolio = () => {
         title: "ReactJS",
         link: "https://reactjs.org/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.REACTJS"),
       },
       {
         title: "React Router",
         link: "https://reactrouter.com/en/main",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.REACT_ROUTER"),
       },
       {
         title: "React Context",
         link: "https://react.dev/reference/react#context-hooks",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.REACT_CONTEXT"),
       },
       {
         title: "React i18next",
         link: "https://react.i18next.com/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.I18NEXT"),
       },
       {
         title: "Material-UI",
         link: "https://mui.com/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.MUI"),
       },
       {
         title: "Typescript",
         link: "https://www.typescriptlang.org/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.TYPESCRIPT"),
       },
       {
         title: "EmailJS",
         link: "https://www.emailjs.com/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.EMAILJS"),
       },
       {
         title: "Heroku",
         link: "https://www.heroku.com/",
         icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.HEROKU"),
       },
     ],
   };
@@ -102,28 +112,33 @@ const AboutThePortfolio = () => {
                   <ListItemAvatar>
                     <Avatar>{v.icon}</Avatar>
                   </ListItemAvatar>
-                  <a
-                    href={v.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{
-                      color: "inherit",
-                      textDecoration: "none",
-                      display: "block",
-                      width: "120px",
-                    }}
-                  >
-                    <Typography
-                      fontWeight={500}
-                      sx={{
-                        "&:hover": {
-                          textDecoration: "underline",
-                        },
-                      }}
-                    >
-                      {v.title}
-                    </Typography>
-                  </a>
+                  <ListItemText
+                    primary={
+                      <a
+                        href={v.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                          color: "inherit",
+                          textDecoration: "none",
+                          display: "block",
+                          width: "120px",
+                        }}
+                      >
+                        <Typography
+                          fontWeight={500}
+                          sx={{
+                            "&:hover": {
+                              textDecoration: "underline",
+                            },
+                          }}
+                        >
+                          {v.title}
+                        </Typography>
+                      </a>
+                    }
+                    secondary={v.description}
+                  ></ListItemText>
                 </ListItem>
               ))}
             </List>
@@ -148,25 +163,29 @@ const AboutThePortfolio = () => {
                 <Filter2Icon color="primary" />
               </ListItemAvatar>
               <ListItemText
-                primary={
-                  <p>
-                    {t("TOAST.PORTFOLIO_REPOSITORY")}{" "}
-                    <a
-                      href="https://github.com/tarciziofcipriano/portfolio"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{
-                        color: "inherit",
-                        textDecoration: "none",
-                        fontWeight: "bold",
-                        fontSize: "14px",
-                      }}
-                    >
-                      link
-                    </a>
-                    .
-                  </p>
+                primary={t("TOAST.PORTFOLIO_REPOSITORY")}
+                secondary={
+                  <a
+                    href="https://github.com/tarciziofcipriano/portfolio"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      color: "inherit",
+                      fontSize: "14px",
+                    }}
+                  >
+                    Portfolio Github
+                  </a>
                 }
+              />
+            </ListItem>
+            <ListItem sx={{ mt: 1 }}>
+              <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
+                <Filter3Icon color="primary" />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Última atualização:"
+                secondary="31/03/2023"
               />
             </ListItem>
           </List>
@@ -177,3 +196,4 @@ const AboutThePortfolio = () => {
 };
 
 export default AboutThePortfolio;
+//

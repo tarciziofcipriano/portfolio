@@ -2,9 +2,39 @@
 export default {
   en: {
     translation: {
+      ABOUT_THE_PORTFOLIO: {
+        EMAILJS: "Email sending library",
+        HEROKU: "Cloud platform",
+        I18NEXT: "Internationalization library",
+        MUI: "ReactJS component library",
+        REACTJS: "JavaScript front-end library",
+        REACT_CONTEXT: "Global state manager",
+        REACT_ROUTER: "ReactJS routes library",
+        TYPESCRIPT: "JavaScript superset",
+      },
       BUTTON: {
         HOME_PAGE: "Home",
         SEND: "Send",
+      },
+      CARD_DATA: {
+        BILLET_IN_TYPESCRIPT:
+          "Billet made in ReactJS with Typescript, with barcode.",
+        BLOG_APP:
+          "Blog, with the frontend developed with Bootstrap and the backend with Javascript.",
+        CRUD_ANGULAR:
+          "A simple project showing a Crud of products made in Angular.",
+        CRUD_AXIOS:
+          "Crud (create, read, update and delete) of users using the Axios library.",
+        FULLSTACK_REACT:
+          "React fullstack structure, with the backend in Javascript and the frontend in ReactJS and Typescript.",
+        REACT_DASHBOARD:
+          "Dashboard, showing showing some ways to visualize the data in the frontend.",
+        SHOPPING_CARD:
+          "Basic shopping page developed in ReactJS with Javascript.",
+        SWAGGER:
+          "Framework that helps the description, consumption and visualization of services from a REST API.",
+        TICKETS_IN_TYPESCRIPT:
+          "Tickets made in Typescript (in size 80mm and A4)",
       },
       TEXT: {
         ABOUT_ME: "About me",
@@ -31,39 +61,49 @@ export default {
         TRAINING_AND_SKILLS: "Training and skills",
         YEARS_OF_EXPERIENCE: "Years of experience",
       },
-      CARD_DATA: {
-        BILLET_IN_TYPESCRIPT:
-          "Billet made in ReactJS with Typescript, with barcode.",
-        BLOG_APP:
-          "Blog, with the frontend developed with Bootstrap and the backend with Javascript.",
-        CRUD_ANGULAR:
-          "A simple project showing a Crud of products made in Angular.",
-        CRUD_AXIOS:
-          "Crud (create, read, update and delete) of users using the Axios library.",
-        FULLSTACK_REACT:
-          "React fullstack structure, with the backend in Javascript and the frontend in ReactJS and Typescript.",
-        REACT_DASHBOARD:
-          "Dashboard, showing showing some ways to visualize the data in the frontend.",
-        SHOPPING_CARD:
-          "Basic shopping page developed in ReactJS with Javascript.",
-        SWAGGER:
-          "Framework that helps the description, consumption and visualization of services from a REST API.",
-        TICKETS_IN_TYPESCRIPT:
-          "Tickets made in Typescript (in size 80mm and A4)",
-      },
       TOAST: {
         FILL_ALL_FIELDS: "Please fill in all fields of the form for validation",
         HEROKU: "Heroku was used for hosting the Portfolio repository",
         PORTFOLIO_REPOSITORY:
-          "The Portfolio repository can be viewed/downloaded through the",
+          "The Portfolio repository can be viewed/downloaded through the link:",
       },
     },
   },
   es: {
     translation: {
+      ABOUT_THE_PORTFOLIO: {
+        EMAILJS: "Biblioteca de envío de correo electrónico",
+        HEROKU: "Plataforma en la nube",
+        I18NEXT: "Biblioteca de internacionalización",
+        MUI: "Biblioteca de componentes ReactJS",
+        REACTJS: "Biblioteca frontal de JavaScript",
+        REACT_CONTEXT: "Gerente de estado global",
+        REACT_ROUTER: "Biblioteca de rutas de ReactJS",
+        TYPESCRIPT: "Superconjunto de JavaScript",
+      },
       BUTTON: {
         HOME_PAGE: "Inicio",
         SEND: "Mandar",
+      },
+      CARD_DATA: {
+        BILLET_IN_TYPESCRIPT:
+          "Billet realizado en ReactJS con Typescript, con código de barras.",
+        BLOG_APP:
+          "Blog, con el frontend desarrollado con Bootstrap y el backend con Javascript.",
+        FULLSTACK_REACT:
+          "Estructura fullstack de React, con el backend en Javascript y el frontend en ReactJS y Typescript.",
+        CRUD_ANGULAR:
+          "Un proyecto sencillo que muestra un Crud de productos realizados en Angular.",
+        CRUD_AXIOS:
+          "Crud (crear, leer, actualizar y eliminar) de usuarios que utilizan la biblioteca Axios.",
+        REACT_DASHBOARD:
+          "Tablero, que muestra algunas formas de visualizar los datos en la interfaz.",
+        SHOPPING_CARD:
+          "Página básica de compras desarrollada en ReactJS con Javascript.",
+        SWAGGER:
+          "Framework que ayuda a la descripción, consumo y visualización de servicios desde una API REST.",
+        TICKETS_IN_TYPESCRIPT:
+          "Entradas realizadas en Typescript (en tamaño 80mm y A4)",
       },
       TEXT: {
         ABOUT_ME: "Sobre mi",
@@ -90,40 +130,50 @@ export default {
         TRAINING_AND_SKILLS: "Entrenamiento y habilidades",
         YEARS_OF_EXPERIENCE: "Años de experiencia",
       },
-      CARD_DATA: {
-        BILLET_IN_TYPESCRIPT:
-          "Billet realizado en ReactJS con Typescript, con código de barras.",
-        BLOG_APP:
-          "Blog, con el frontend desarrollado con Bootstrap y el backend con Javascript.",
-        FULLSTACK_REACT:
-          "Estructura fullstack de React, con el backend en Javascript y el frontend en ReactJS y Typescript.",
-        CRUD_ANGULAR:
-          "Un proyecto sencillo que muestra un Crud de productos realizados en Angular.",
-        CRUD_AXIOS:
-          "Crud (crear, leer, actualizar y eliminar) de usuarios que utilizan la biblioteca Axios.",
-        REACT_DASHBOARD:
-          "Tablero, que muestra algunas formas de visualizar los datos en la interfaz.",
-        SHOPPING_CARD:
-          "Página básica de compras desarrollada en ReactJS con Javascript.",
-        SWAGGER:
-          "Framework que ayuda a la descripción, consumo y visualización de servicios desde una API REST.",
-        TICKETS_IN_TYPESCRIPT:
-          "Entradas realizadas en Typescript (en tamaño 80mm y A4)",
-      },
       TOAST: {
         FILL_ALL_FIELDS:
           "Por favor, rellene todos los campos del formulario para la validación",
         HEROKU: "Heroku se utilizó para alojar el repositorio de Portfolio",
         PORTFOLIO_REPOSITORY:
-          "El repositorio del Portafolio se puede ver/descargar a través del",
+          "El repositorio del Portafolio se puede ver/descargar a través del link:",
       },
     },
   },
   pt: {
     translation: {
+      ABOUT_THE_PORTFOLIO: {
+        EMAILJS: "Biblioteca de envio de e-mails",
+        HEROKU: "Plataforma de nuvem",
+        I18NEXT: "Biblioteca de internacionalização",
+        MUI: "Biblioteca de componentes ReactJS",
+        REACTJS: "Biblioteca front-end JavaScript",
+        REACT_CONTEXT: "Gerenciador de estado global",
+        REACT_ROUTER: "Biblioteca ReactJS de rotas",
+        TYPESCRIPT: "Superconjunto de JavaScript",
+      },
       BUTTON: {
         HOME_PAGE: "Início",
         SEND: "Enviar",
+      },
+      CARD_DATA: {
+        BILLET_IN_TYPESCRIPT:
+          "Boleto feito em ReactJS com Typescript, com código de barras.",
+        BLOG_APP:
+          "Blog, com o frontend desenvolvido com Bootstrap e backend com Javascript.",
+        FULLSTACK_REACT:
+          "Estrutura fullstack React, com o backend em Javascript e o frontend em ReactJS e Typescript.",
+        CRUD_ANGULAR:
+          "Um simples projeto mostrando um Crud de produtos feito em Angular.",
+        CRUD_AXIOS:
+          "Crud (create, read, update e delete) de usuários utilizando a biblioteca Axios.",
+        REACT_DASHBOARD:
+          "Dashboard, mostrando mostrando algumas formas de visualizar os dados no frontend.",
+        SHOPPING_CARD:
+          "Página básica de compras desenvolvido em ReactJS com Javascript.",
+        SWAGGER:
+          "Framework que auxilia a descrição, consumo e visualização de serviços de uma API REST.",
+        TICKETS_IN_TYPESCRIPT:
+          "Ingressos feitos em Typescript (no tamanho 80mm e A4)",
       },
       TEXT: {
         ABOUT_ME: "Sobre mim",
@@ -150,33 +200,13 @@ export default {
         TRAINING_AND_SKILLS: "Formação e habilidades",
         YEARS_OF_EXPERIENCE: "Anos de experiência",
       },
-      CARD_DATA: {
-        BILLET_IN_TYPESCRIPT:
-          "Boleto feito em ReactJS com Typescript, com código de barras.",
-        BLOG_APP:
-          "Blog, com o frontend desenvolvido com Bootstrap e backend com Javascript.",
-        FULLSTACK_REACT:
-          "Estrutura fullstack React, com o backend em Javascript e o frontend em ReactJS e Typescript.",
-        CRUD_ANGULAR:
-          "Um simples projeto mostrando um Crud de produtos feito em Angular.",
-        CRUD_AXIOS:
-          "Crud (create, read, update e delete) de usuários utilizando a biblioteca Axios.",
-        REACT_DASHBOARD:
-          "Dashboard, mostrando mostrando algumas formas de visualizar os dados no frontend.",
-        SHOPPING_CARD:
-          "Página básica de compras desenvolvido em ReactJS com Javascript.",
-        SWAGGER:
-          "Framework que auxilia a descrição, consumo e visualização de serviços de uma API REST.",
-        TICKETS_IN_TYPESCRIPT:
-          "Ingressos feitos em Typescript (no tamanho 80mm e A4)",
-      },
       TOAST: {
         FILL_ALL_FIELDS:
           "Por favor, preencha todos os campos do formulário para a validação",
         HEROKU:
           "O Heroku foi utilizado para a hospedagem do repositório do Portfólio",
         PORTFOLIO_REPOSITORY:
-          "O repositório do Portfólio pode ser visualizado/baixado através do",
+          "O repositório do Portfólio pode ser visualizado/baixado através do link:",
       },
     },
   },
