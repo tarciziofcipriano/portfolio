@@ -9,6 +9,7 @@ import {
   Box,
   Button,
   Grid,
+  Paper,
   Slide,
   TextField,
   Typography,
@@ -64,7 +65,7 @@ const Contact = () => {
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
       <Grid justifyContent="center" container pt={mobile ? "20%" : 11}>
-        <Grid item xs={12} sm={12} md={8} lg={5} pl={1} pr={1}>
+        <Grid item xs={12} sm={12} md={8} lg={6} pl={1} pr={1}>
           <Box display="flex" mb={3}>
             <Box mt={0.45} alignSelf="center">
               <ContactMailIcon fontSize="large" />
@@ -73,44 +74,46 @@ const Contact = () => {
               {t("TEXT.CONTACT")}
             </Typography>
           </Box>
+          <Paper sx={{ p: 4, borderRadius: 3 }} elevation={3}>
+            <form ref={form} onSubmit={sendEmail}>
+              <Box display="grid">
+                <TextField
+                  label={t("TEXT.NAME")}
+                  name="name"
+                  onChange={(e) => handleChangeName(e.target.value)}
+                />
+                <TextField
+                  label="Email"
+                  name="email"
+                  onChange={(e) => handleChangeEmail(e.target.value)}
+                  sx={{ mt: 2, mb: 2 }}
+                />
+                <TextField
+                  label={t("TEXT.MESSAGE")}
+                  name="message"
+                  multiline
+                  rows={6}
+                  onChange={(e) => handleChangeMessage(e.target.value)}
+                  sx={{ mb: 2 }}
+                />
+              </Box>
+              <Button
+                disabled={!isFormValid}
+                variant="contained"
+                type="submit"
+                sx={{ width: 120 }}
+              >
+                {t("BUTTON.SEND")}
+              </Button>
+            </form>
+          </Paper>
           <Alert
             variant="outlined"
             severity="info"
-            sx={{ fontSize: 14, fontWeight: 500, ml: 1, mb: 3 }}
+            sx={{ fontSize: 14, fontWeight: 500, ml: 1, mt: 3, maxWidth: 550 }}
           >
             {t("TOAST.FILL_ALL_FIELDS")}
           </Alert>
-          <form ref={form} onSubmit={sendEmail}>
-            <Box display="grid">
-              <TextField
-                label={t("TEXT.NAME")}
-                name="name"
-                onChange={(e) => handleChangeName(e.target.value)}
-              />
-              <TextField
-                label="Email"
-                name="email"
-                onChange={(e) => handleChangeEmail(e.target.value)}
-                sx={{ mt: 2, mb: 2 }}
-              />
-              <TextField
-                label={t("TEXT.MESSAGE")}
-                name="message"
-                multiline
-                rows={6}
-                onChange={(e) => handleChangeMessage(e.target.value)}
-                sx={{ mb: 2 }}
-              />
-            </Box>
-            <Button
-              disabled={!isFormValid}
-              variant="contained"
-              type="submit"
-              sx={{ width: 120 }}
-            >
-              {t("BUTTON.SEND")}
-            </Button>
-          </form>
         </Grid>
       </Grid>
     </Slide>

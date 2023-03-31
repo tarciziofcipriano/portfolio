@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   ListItemAvatar,
+  Paper,
   Slide,
   Step,
   StepContent,
@@ -72,31 +73,33 @@ const AboutMe = () => {
               </Button>
             </Box>
           </Box>
-          <Stepper orientation="vertical">
-            {training.map((t) => (
-              <Step key={t.label} active={true}>
-                <StepLabel>{t.label}:</StepLabel>
-                <StepContent>
-                  <List dense={true}>
-                    {t.description &&
-                      t.description.map((v) => (
-                        <ListItem key={v.title} sx={{ mt: 0.5, p: 0 }}>
-                          <ListItemAvatar
-                            sx={{ mt: mobile ? 0 : 0.8, minWidth: "45px" }}
-                          >
-                            <CheckIcon color="primary" />
-                          </ListItemAvatar>
-                          {v.title}
-                        </ListItem>
-                      ))}
-                  </List>
-                </StepContent>
-              </Step>
-            ))}
-          </Stepper>
-          <Box>
-            <Graph title={t("TEXT.YEARS_OF_EXPERIENCE")} />
-          </Box>
+          <Paper sx={{ p: 4, mb: 3, borderRadius: 3 }} elevation={3}>
+            <Stepper orientation="vertical">
+              {training.map((t) => (
+                <Step key={t.label} active={true}>
+                  <StepLabel>{t.label}:</StepLabel>
+                  <StepContent>
+                    <List dense={true}>
+                      {t.description &&
+                        t.description.map((v) => (
+                          <ListItem key={v.title} sx={{ mt: 0.5, p: 0 }}>
+                            <ListItemAvatar
+                              sx={{ mt: mobile ? 0 : 0.8, minWidth: "45px" }}
+                            >
+                              <CheckIcon color="primary" />
+                            </ListItemAvatar>
+                            {v.title}
+                          </ListItem>
+                        ))}
+                    </List>
+                  </StepContent>
+                </Step>
+              ))}
+            </Stepper>
+            <Box>
+              <Graph title={t("TEXT.YEARS_OF_EXPERIENCE")} />
+            </Box>
+          </Paper>
         </Grid>
       </Grid>
     </Slide>
