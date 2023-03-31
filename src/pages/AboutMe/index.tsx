@@ -1,8 +1,11 @@
-import { Person as PersonIcon } from "@mui/icons-material";
+import { Check as CheckIcon, Person as PersonIcon } from "@mui/icons-material";
 import {
   Box,
   Button,
   Grid,
+  List,
+  ListItem,
+  ListItemAvatar,
   Slide,
   Step,
   StepContent,
@@ -30,7 +33,7 @@ const AboutMe = () => {
 
   const training: TraningDescriptionProps[] = [
     {
-      label: t("TEXT.TRAINING"),
+      label: t("TEXT.TRAINING_AND_SKILLS"),
       description: [
         {
           title: t("TEXT.ABOUT_ME_DESC_ONE"),
@@ -59,7 +62,7 @@ const AboutMe = () => {
               <Box mt={0.45} alignSelf="center">
                 <PersonIcon fontSize="large" />
               </Box>
-              <Typography fontSize={mobile ? 32 : 36} fontWeight="bold" ml={1}>
+              <Typography fontSize={mobile ? 28 : 36} fontWeight="bold" ml={1}>
                 {t("TEXT.ABOUT_ME")}
               </Typography>
             </Box>
@@ -74,10 +77,19 @@ const AboutMe = () => {
               <Step key={t.label} active={true}>
                 <StepLabel>{t.label}:</StepLabel>
                 <StepContent>
-                  {t.description &&
-                    t.description.map((v) => (
-                      <Typography key={v.title}>{v.title}</Typography>
-                    ))}
+                  <List dense={true}>
+                    {t.description &&
+                      t.description.map((v) => (
+                        <ListItem key={v.title} sx={{ mt: 1, p: 0 }}>
+                          <ListItemAvatar
+                            sx={{ mt: mobile ? 0 : 0.8, minWidth: "45px" }}
+                          >
+                            <CheckIcon color="primary" />
+                          </ListItemAvatar>
+                          {v.title}
+                        </ListItem>
+                      ))}
+                  </List>
                 </StepContent>
               </Step>
             ))}

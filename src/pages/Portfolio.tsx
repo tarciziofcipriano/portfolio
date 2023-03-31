@@ -3,7 +3,6 @@ import {
   Info as InfoIcon,
   Filter1 as Filter1Icon,
   Filter2 as Filter2Icon,
-  GitHub as GitHubIcon,
   TableView as TableViewIcon,
 } from "@mui/icons-material";
 import {
@@ -41,6 +40,21 @@ const AboutThePortfolio = () => {
       {
         title: "ReactJS",
         link: "https://reactjs.org/",
+        icon: <CheckIcon />,
+      },
+      {
+        title: "React Router",
+        link: "https://reactrouter.com/en/main",
+        icon: <CheckIcon />,
+      },
+      {
+        title: "React Context",
+        link: "https://react.dev/reference/react#context-hooks",
+        icon: <CheckIcon />,
+      },
+      {
+        title: "React i18next",
+        link: "https://react.i18next.com/",
         icon: <CheckIcon />,
       },
       {
@@ -127,38 +141,33 @@ const AboutThePortfolio = () => {
               <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                 <Filter1Icon color="primary" />
               </ListItemAvatar>
-              <ListItemText primary={t("TOAST.HEROKU")} />
+              <ListItemText primary={`${t("TOAST.HEROKU")}.`} />
             </ListItem>
-            <ListItem
-              sx={{ mt: 2 }}
-              secondaryAction={
-                <a
-                  href="https://github.com/tarciziofcipriano/portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{
-                    color: "inherit",
-                    textDecoration: "none",
-                    display: "block",
-                  }}
-                >
-                  <Typography
-                    fontWeight="bold"
-                    sx={{
-                      "&:hover": {
-                        textDecoration: "underline",
-                      },
-                    }}
-                  >
-                    <GitHubIcon sx={{ ml: mobile ? 20 : 0 }} />
-                  </Typography>
-                </a>
-              }
-            >
+            <ListItem sx={{ mt: 2 }}>
               <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                 <Filter2Icon color="primary" />
               </ListItemAvatar>
-              <ListItemText primary={`${t("TOAST.PORTFOLIO_REPOSITORY")} :`} />
+              <ListItemText
+                primary={
+                  <p>
+                    {t("TOAST.PORTFOLIO_REPOSITORY")}{" "}
+                    <a
+                      href="https://github.com/tarciziofcipriano/portfolio"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        color: "inherit",
+                        textDecoration: "none",
+                        fontWeight: "bold",
+                        fontSize: "14px",
+                      }}
+                    >
+                      link
+                    </a>
+                    .
+                  </p>
+                }
+              />
             </ListItem>
           </List>
         </Grid>

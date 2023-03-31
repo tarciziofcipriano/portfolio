@@ -28,7 +28,7 @@ export default {
         PORTFOLIO: "Portfolio",
         PROJECTS: "Projects",
         SOME_TECHNOLOGIES_TITLE: "Some technologies used",
-        TRAINING: "Training",
+        TRAINING_AND_SKILLS: "Training and skills",
         YEARS_OF_EXPERIENCE: "Years of experience",
       },
       CARD_DATA: {
@@ -55,7 +55,7 @@ export default {
         FILL_ALL_FIELDS: "Please fill in all fields of the form for validation",
         HEROKU: "Heroku was used for hosting the Portfolio repository",
         PORTFOLIO_REPOSITORY:
-          "The Portfolio repository can be viewed/downloaded through the link",
+          "The Portfolio repository can be viewed/downloaded through the",
       },
     },
   },
@@ -87,7 +87,7 @@ export default {
         PORTFOLIO: "Cartera",
         PROJECTS: "Proyectos",
         SOME_TECHNOLOGIES_TITLE: "Algunas tecnologías utilizadas",
-        TRAINING: "Capacitación",
+        TRAINING_AND_SKILLS: "Entrenamiento y habilidades",
         YEARS_OF_EXPERIENCE: "Años de experiencia",
       },
       CARD_DATA: {
@@ -115,7 +115,7 @@ export default {
           "Por favor, rellene todos los campos del formulario para la validación",
         HEROKU: "Heroku se utilizó para alojar el repositorio de Portfolio",
         PORTFOLIO_REPOSITORY:
-          "El repositorio del Portafolio se puede ver/descargar a través del link",
+          "El repositorio del Portafolio se puede ver/descargar a través del",
       },
     },
   },
@@ -147,7 +147,7 @@ export default {
         PORTFOLIO: "Portfólio",
         PROJECTS: "Projetos",
         SOME_TECHNOLOGIES_TITLE: "Algumas tecnologías utilizadas",
-        TRAINING: "Formação",
+        TRAINING_AND_SKILLS: "Formação e habilidades",
         YEARS_OF_EXPERIENCE: "Anos de experiência",
       },
       CARD_DATA: {
@@ -176,7 +176,7 @@ export default {
         HEROKU:
           "O Heroku foi utilizado para a hospedagem do repositório do Portfólio",
         PORTFOLIO_REPOSITORY:
-          "O repositório do Portfólio pode ser visualizado/baixado através do link",
+          "O repositório do Portfólio pode ser visualizado/baixado através do",
       },
     },
   },
