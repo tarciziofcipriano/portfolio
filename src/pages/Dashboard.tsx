@@ -30,7 +30,16 @@ const Dashboard = () => {
         container
         pt={mobile ? "20%" : "16%"}
       >
-        <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1} alignSelf="center">
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={8}
+          lg={9}
+          pl={1}
+          pr={1}
+          alignSelf="center"
+        >
           <Box>
             <Typography fontWeight="bold" fontSize="h3" mr={1}>
               {t("TEXT.DASHBOARD_TITLE")}
@@ -47,7 +56,7 @@ const Dashboard = () => {
           >
             {t("TEXT.ABOUT_ME")}
           </Button>
-          <Grid container sx={{ placeContent: "center" }} mb={3}>
+          <Grid container sx={{ placeContent: "center" }}>
             <Grid item>
               <a
                 href="https://pt-br.facebook.com/tarcizio.cipriano/"
@@ -108,8 +117,9 @@ const Dashboard = () => {
             alt="user"
             style={{
               height: "340px",
-              width: "275px",
+              width: "265px",
               borderRadius: "50%",
+              boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
             }}
           />
         </Grid>

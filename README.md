@@ -14,6 +14,7 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 - [Typescript](https://www.typescriptlang.org/)
 - [EmailJS](https://www.emailjs.com/)
 - [Heroku](https://www.heroku.com/)
+- [Box Shadows](https://getcssscan.com/css-box-shadow-examples)
 
 ## Pré-requisitos
 
