@@ -28,7 +28,7 @@ const Dashboard = () => {
         container
         pt="20%"
       >
-        <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
+        <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1} alignSelf="center">
           <Box>
             <Typography fontWeight="bold" fontSize="h3" mr={1}>
               {t("TEXT.DASHBOARD_TITLE")}
@@ -102,12 +102,12 @@ const Dashboard = () => {
         </Grid>
         <Grid item pl={1.5} pr={1.5}>
           <img
-            src="/user.jpg"
+            src="/foto_perfil.jpeg"
             alt="user"
             style={{
-              height: "230px",
-              width: "230px",
-              borderRadius: "50%",
+              height: "340px",
+              width: "275px",
+             borderRadius: "50%",
             }}
           />
         </Grid>

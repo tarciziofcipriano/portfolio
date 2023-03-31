@@ -82,7 +82,7 @@ const AboutThePortfolio = () => {
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Grid justifyContent="center" container pt={mobile ? "20%" : "8%"}>
+      <Grid justifyContent="center" container pt={mobile ? "20%" : 11}>
         <Grid item xs={12} sm={12} md={8} lg={5} pl={1} pr={1}>
           <Box display="flex" mb={3}>
             <Box mt={0.45} alignSelf="center">

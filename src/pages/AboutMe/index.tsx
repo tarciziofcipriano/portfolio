@@ -54,7 +54,7 @@ const AboutMe = () => {
         display="flex"
         justifyContent="center"
         container
-        pt={mobile ? "20%" : "8%"}
+        pt={mobile ? "20%" : 11}
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
           <Box display="flex" justifyContent="space-between" mb={3}>
@@ -80,7 +80,7 @@ const AboutMe = () => {
                   <List dense={true}>
                     {t.description &&
                       t.description.map((v) => (
-                        <ListItem key={v.title} sx={{ mt: 1, p: 0 }}>
+                        <ListItem key={v.title} sx={{ mt: 0.5, p: 0 }}>
                           <ListItemAvatar
                             sx={{ mt: mobile ? 0 : 0.8, minWidth: "45px" }}
                           >

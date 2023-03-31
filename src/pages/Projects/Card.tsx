@@ -36,20 +36,36 @@ const Card = ({ title, description, link, image }: CardDataProps) => {
               }
             : {
                 backgroundColor: "#323232",
-                boxShadow: "0px 1px 2px 0px rgba(175, 175, 175, 0.8), 1px 2px 4px 0px rgba(175, 175, 175, 0.8), 2px 4px 8px 0px rgba(175, 175, 175, 0.8), 2px 4px 16px 0px rgba(175, 175, 175, 0.8)",
+                boxShadow:
+                  "0px 1px 2px 0px rgba(175, 175, 175, 0.8), 1px 2px 4px 0px rgba(175, 175, 175, 0.8), 2px 4px 8px 0px rgba(175, 175, 175, 0.8), 2px 4px 16px 0px rgba(175, 175, 175, 0.8)",
                 cursor: "pointer",
               },
       }}
     >
-      <CardMedia component="img" height="140" image={image} />
-      <CardContent>
-        <Typography gutterBottom fontSize={20} component="div">
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          color: "inherit",
+          textDecoration: "none",
+        }}
+      >
+        <CardMedia
+          component="img"
+          height="130vh"
+          image={image}
+          sx={{ backgroundSize: "cover" }}
+        />
+        <CardContent>
+          <Typography gutterBottom fontSize={20} component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+      </a>
     </MuiCard>
   );
 };

@@ -15,7 +15,7 @@ const NotFound = () => {
       container
       direction="column"
       alignItems="center"
-      sx={{ pt: mobile ? "20%" : "8%", textAlign: "center" }}
+      sx={{ pt: mobile ? "20%" : 11, textAlign: "center" }}
     >
       <Grid item>
         <Typography variant="h1" sx={{ fontSize: 180 }}>
