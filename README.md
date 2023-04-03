@@ -10,6 +10,7 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 - [React Router](https://reactrouter.com/en/main)
 - [React Context](https://react.dev/reference/react#context-hooks)
 - [React i18next](https://react.i18next.com/)
+- [React Hooks](https://react.dev/learn#using-hooks)
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [EmailJS](https://www.emailjs.com/)
