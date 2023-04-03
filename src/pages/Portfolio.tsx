@@ -199,13 +199,13 @@ const AboutThePortfolio = () => {
                   }
                 />
               </ListItem>
-              <ListItem sx={{ mt: 1 }}>
+              <ListItem sx={{ mt: 2 }}>
                 <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                   <Filter3Icon color="primary" />
                 </ListItemAvatar>
                 <ListItemText primary={`${t("TEXT.PORTFOLIO_RESPONSIVE")}.`} />
               </ListItem>
-              <ListItem sx={{ mt: 1 }}>
+              <ListItem sx={{ mt: 2 }}>
                 <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                   <Filter4Icon color="primary" />
                 </ListItemAvatar>
