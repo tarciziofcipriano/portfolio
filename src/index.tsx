@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import Router from "./routes";
 
 import "./translations";
+import { MenuOptionProvider } from "./context/MenuOptionContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,9 +18,11 @@ root.render(
     <ToastProvider>
       <BrowserRouter>
         <ThemeModeProvider>
-          <Layout>
-            <Router />
-          </Layout>
+          <MenuOptionProvider>
+            <Layout>
+              <Router />
+            </Layout>
+          </MenuOptionProvider>
         </ThemeModeProvider>
       </BrowserRouter>
     </ToastProvider>

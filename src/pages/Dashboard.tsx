@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   Box,
   Button,
@@ -17,9 +19,11 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ABOUT_ME } from "../routes/constants";
 import useIsMobile from "../hooks/useIsMobile";
+import { MenuOptionContext } from "../context/MenuOptionContext";
 
 const Dashboard = () => {
   const { t } = useTranslation();
+  const { setMenuOption } = React.useContext(MenuOptionContext);
   const mobile = useIsMobile();
 
   return (
@@ -51,6 +55,7 @@ const Dashboard = () => {
           <Button
             variant="contained"
             sx={{ mt: 3, mb: 3 }}
+            onClick={() => setMenuOption(1)}
             component={Link}
             to={ABOUT_ME}
           >
@@ -119,7 +124,7 @@ const Dashboard = () => {
               height: "340px",
               width: "265px",
               borderRadius: "50%",
-              opacity: "95%",
+              opacity: "90%",
               boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
             }}
           />

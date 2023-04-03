@@ -122,14 +122,8 @@ const Layout = ({ children, window }: LayoutProps) => {
             </Drawer>
           </Box>
           <Container disableGutters maxWidth={"100%" as any}>
-            <Box
-              sx={{
-                backgroundImage: mode === "light" ? "#F0F2F5" : "none",
-              }}
-            >
-              <Box pl={2} pr={2}>
-                {children}
-              </Box>
+            <Box pl={2} pr={2}>
+              {children}
             </Box>
           </Container>
         </Box>

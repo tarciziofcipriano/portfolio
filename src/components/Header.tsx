@@ -6,6 +6,7 @@ import LanguageSelector from "./LanguageSelector";
 import React, { Context } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import { ThemeModeContext } from "../context/ThemeModeContext";
+import { MenuOptionContext } from "../context/MenuOptionContext";
 
 interface HeaderProps {
   handleDrawerToggle: () => void;
@@ -23,7 +24,7 @@ const Header = ({
 }: HeaderProps) => {
   const colorMode = React.useContext(colorModeContext);
   const { theme } = React.useContext(ThemeModeContext);
-  const [menuOption, setMenuOption] = React.useState(0);
+  const { menuOption, setMenuOption } = React.useContext(MenuOptionContext);
 
   const handleChange = (_: any, value: number) => {
     setMenuOption(value);

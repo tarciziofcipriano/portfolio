@@ -10,6 +10,9 @@ export const theme = (mode: PaletteMode | undefined) =>
       secondary: {
         main: "#FFFF",
       },
+        background: {
+        default: mode === "light" ? "#EEEEEE" : "#121212",
+      },
     },
     components: {
       MuiTextField: {
