@@ -17,9 +17,6 @@ import {
 import { ToastContext } from "../context/ToastContext";
 import useIsMobile from "../hooks/useIsMobile";
 
-const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } =
-  process.env;
-
 const Contact = () => {
   const { t } = useTranslation();
   const mobile = useIsMobile();
@@ -35,17 +32,17 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        REACT_APP_SERVICE_ID as string,
-        REACT_APP_TEMPLATE_ID as string,
+        "service_ppagbw8",
+        "template_p181hr4",
         form.current,
-        REACT_APP_PUBLIC_KEY
+        "86EDJEgiuSWEI7aJR"
       )
       .then(
         () => {
-          toastSuccess("E-mail enviado com sucesso!");
+          toastSuccess(t("TOAST.EMAIL_SUCCESS"));
         },
         () => {
-          toastError("Erro ao enviar Email");
+          toastError(t("TOAST.EMAIL_ERROR"));
         }
       );
   };

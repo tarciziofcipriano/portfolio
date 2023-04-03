@@ -64,6 +64,8 @@ export default {
         YEARS_OF_EXPERIENCE: "Years of experience",
       },
       TOAST: {
+        EMAIL_ERROR: "Error sending e-mail",
+        EMAIL_SUCCESS: "Email successfully sent!",
         FILL_ALL_FIELDS: "Please fill in all fields of the form for validation",
         NETLIFY: "Netlify was used for hosting the Portfolio repository",
         PORTFOLIO_REPOSITORY:
@@ -135,6 +137,8 @@ export default {
         YEARS_OF_EXPERIENCE: "Años de experiencia",
       },
       TOAST: {
+        EMAIL_ERROR: "Error al enviar correo electrónico",
+        EMAIL_SUCCESS: "¡Email enviado con éxito!",
         FILL_ALL_FIELDS:
           "Por favor, rellene todos los campos del formulario para la validación",
         NETLIFY: "Netlify se utilizó para alojar el repositorio de Portfolio",
@@ -207,6 +211,8 @@ export default {
         YEARS_OF_EXPERIENCE: "Anos de experiência",
       },
       TOAST: {
+        EMAIL_ERROR: "Erro ao enviar E-mail",
+        EMAIL_SUCCESS: "E-mail enviado com sucesso!",
         FILL_ALL_FIELDS:
           "Por favor, preencha todos os campos do formulário para a validação",
         NETLIFY:
