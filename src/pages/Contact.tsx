@@ -35,7 +35,7 @@ const Contact = () => {
         "service_ppagbw8",
         "template_p181hr4",
         form.current,
-        "86EDJEgiuSWEI7aJR"
+        "tTy6h_fKkRURr-WrT"
       )
       .then(
         () => {
