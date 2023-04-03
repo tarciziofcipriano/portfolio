@@ -83,10 +83,10 @@ const AboutThePortfolio = () => {
         description: t("ABOUT_THE_PORTFOLIO.EMAILJS"),
       },
       {
-        title: "Heroku",
-        link: "https://www.heroku.com/",
+        title: "Netlify",
+        link: "https://www.netlify.com/",
         icon: <CheckIcon />,
-        description: t("ABOUT_THE_PORTFOLIO.HEROKU"),
+        description: t("ABOUT_THE_PORTFOLIO.NETLIFY"),
       },
     ],
   };
@@ -168,7 +168,7 @@ const AboutThePortfolio = () => {
                 <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                   <Filter1Icon color="primary" />
                 </ListItemAvatar>
-                <ListItemText primary={`${t("TOAST.HEROKU")}.`} />
+                <ListItemText primary={`${t("TOAST.NETLIFY")}.`} />
               </ListItem>
               <ListItem sx={{ mt: 2 }}>
                 <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>

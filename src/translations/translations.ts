@@ -4,9 +4,9 @@ export default {
     translation: {
       ABOUT_THE_PORTFOLIO: {
         EMAILJS: "Email sending library",
-        HEROKU: "Cloud platform",
         I18NEXT: "Internationalization library",
         MUI: "ReactJS component library",
+        NETLIFY: "Cloud platform",
         REACTJS: "JavaScript front-end library",
         REACT_CONTEXT: "Global state manager",
         REACT_ROUTER: "ReactJS routes library",
@@ -64,7 +64,7 @@ export default {
       },
       TOAST: {
         FILL_ALL_FIELDS: "Please fill in all fields of the form for validation",
-        HEROKU: "Heroku was used for hosting the Portfolio repository",
+        NETLIFY: "Netlify was used for hosting the Portfolio repository",
         PORTFOLIO_REPOSITORY:
           "The Portfolio repository can be viewed/downloaded through the link:",
       },
@@ -74,9 +74,9 @@ export default {
     translation: {
       ABOUT_THE_PORTFOLIO: {
         EMAILJS: "Biblioteca de envío de correo electrónico",
-        HEROKU: "Plataforma en la nube",
         I18NEXT: "Biblioteca de internacionalización",
         MUI: "Biblioteca de componentes ReactJS",
+        NETLIFY: "Plataforma en la nube",
         REACTJS: "Biblioteca frontal de JavaScript",
         REACT_CONTEXT: "Gerente de estado global",
         REACT_ROUTER: "Biblioteca de rutas de ReactJS",
@@ -135,7 +135,7 @@ export default {
       TOAST: {
         FILL_ALL_FIELDS:
           "Por favor, rellene todos los campos del formulario para la validación",
-        HEROKU: "Heroku se utilizó para alojar el repositorio de Portfolio",
+        NETLIFY: "Netlify se utilizó para alojar el repositorio de Portfolio",
         PORTFOLIO_REPOSITORY:
           "El repositorio del Portafolio se puede ver/descargar a través del link:",
       },
@@ -145,9 +145,9 @@ export default {
     translation: {
       ABOUT_THE_PORTFOLIO: {
         EMAILJS: "Biblioteca de envio de e-mails",
-        HEROKU: "Plataforma de nuvem",
         I18NEXT: "Biblioteca de internacionalização",
         MUI: "Biblioteca de componentes ReactJS",
+        NETLIFY: "Plataforma de nuvem",
         REACTJS: "Biblioteca front-end JavaScript",
         REACT_CONTEXT: "Gerenciador de estado global",
         REACT_ROUTER: "Biblioteca ReactJS de rotas",
@@ -206,8 +206,8 @@ export default {
       TOAST: {
         FILL_ALL_FIELDS:
           "Por favor, preencha todos os campos do formulário para a validação",
-        HEROKU:
-          "O Heroku foi utilizado para a hospedagem do repositório do Portfólio",
+        NETLIFY:
+          "O Netlify foi utilizado para a hospedagem do repositório do Portfólio",
         PORTFOLIO_REPOSITORY:
           "O repositório do Portfólio pode ser visualizado/baixado através do link:",
       },

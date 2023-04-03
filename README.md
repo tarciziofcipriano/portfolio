@@ -13,7 +13,7 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [EmailJS](https://www.emailjs.com/)
-- [Heroku](https://www.heroku.com/)
+- [Netlify](https://www.netlify.com/)
 - [Box Shadows](https://getcssscan.com/css-box-shadow-examples)
 
 ## Pré-requisitos
