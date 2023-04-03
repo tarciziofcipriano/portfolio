@@ -17,16 +17,16 @@ const Projects = () => {
 
   const cardsData: CardDataProps[] = [
     {
-      title: "Crud-user-with-axios-mui",
-      description: t("CARD_DATA.CRUD_AXIOS"),
-      link: "https://github.com/tarciziofcipriano/Crud-user-with-axios-mui",
-      image: "/projects/crud-user-with-axios-mui.png",
-    },
-    {
       title: "React-dashboard",
       description: t("CARD_DATA.REACT_DASHBOARD"),
       link: "https://github.com/tarciziofcipriano/React-dashboard",
       image: "/projects/react-dashboard.png",
+    },
+    {
+      title: "Crud-user-with-axios-mui",
+      description: t("CARD_DATA.CRUD_AXIOS"),
+      link: "https://github.com/tarciziofcipriano/Crud-user-with-axios-mui",
+      image: "/projects/crud-user-with-axios-mui.png",
     },
     {
       title: "BlogApp-with-mongodb-node-bootstrap",

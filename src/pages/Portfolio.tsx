@@ -106,7 +106,7 @@ const AboutThePortfolio = () => {
             <Box mt={0.45} alignSelf="center">
               <TableViewIcon fontSize="large" />
             </Box>
-            <Typography fontSize={36} fontWeight="bold" ml={1}>
+            <Typography fontSize={mobile ? 34 : 36} fontWeight="bold" ml={1}>
               {t("TEXT.ABOUT_THE_PORTFOLIO")}
             </Typography>
           </Box>
@@ -114,7 +114,7 @@ const AboutThePortfolio = () => {
             <Box>
               <Typography
                 sx={{ mb: 2 }}
-                fontSize={mobile ? 19 : 20}
+                fontSize={mobile ? 17 : 20}
                 fontWeight={500}
                 component="div"
               >
@@ -159,7 +159,7 @@ const AboutThePortfolio = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item pl={1.5}>
+        <Grid item pl={1} pr={0.5}>
           <Paper
             sx={{ p: 4, mb: 3, mt: mobile ? 3 : 10, borderRadius: 3 }}
             elevation={3}

@@ -107,7 +107,14 @@ const Contact = () => {
           <Alert
             variant="outlined"
             severity="info"
-            sx={{ fontSize: 14, fontWeight: 500, ml: 1, mt: 3, maxWidth: 550 }}
+            sx={{
+              fontSize: 14,
+              fontWeight: 500,
+              ml: 1,
+              mt: 3,
+              mb: 2,
+              maxWidth: 550,
+            }}
           >
             {t("TOAST.FILL_ALL_FIELDS")}
           </Alert>

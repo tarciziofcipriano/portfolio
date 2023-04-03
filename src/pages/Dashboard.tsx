@@ -116,7 +116,7 @@ const Dashboard = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item pl={1.5} pr={1.5}>
+        <Grid item pl={1.5} pr={1.5} pt={mobile ? 2 : 0} pb={mobile ? 2 : 0}>
           <img
             src="/foto_perfil.jpeg"
             alt="user"
