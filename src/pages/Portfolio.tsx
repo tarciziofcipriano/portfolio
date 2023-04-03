@@ -20,6 +20,7 @@ import {
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import useIsMobile from "../hooks/useIsMobile";
+import { portfolioVersion } from "../version";
 
 type DescriptionProps = {
   title: string;
@@ -63,6 +64,12 @@ const AboutThePortfolio = () => {
         link: "https://react.i18next.com/",
         icon: <CheckIcon />,
         description: t("ABOUT_THE_PORTFOLIO.I18NEXT"),
+      },
+      {
+        title: "React Hooks",
+        link: "https://react.dev/learn#using-hooks",
+        icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.REACT_HOOKS"),
       },
       {
         title: "Material-UI",
@@ -197,7 +204,7 @@ const AboutThePortfolio = () => {
                 </ListItemAvatar>
                 <ListItemText
                   primary={`${t("TEXT.LAST_UPDATE")}:`}
-                  secondary="31/03/2023"
+                  secondary={portfolioVersion}
                 />
               </ListItem>
             </List>

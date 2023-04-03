@@ -9,6 +9,7 @@ export default {
         NETLIFY: "Cloud platform",
         REACTJS: "JavaScript front-end library",
         REACT_CONTEXT: "Global state manager",
+        REACT_HOOKS: "Variable reuse",
         REACT_ROUTER: "ReactJS routes library",
         TYPESCRIPT: "JavaScript superset",
       },
@@ -79,6 +80,7 @@ export default {
         NETLIFY: "Plataforma en la nube",
         REACTJS: "Biblioteca frontal de JavaScript",
         REACT_CONTEXT: "Gerente de estado global",
+        REACT_HOOKS: "Reutilización de variables",
         REACT_ROUTER: "Biblioteca de rutas de ReactJS",
         TYPESCRIPT: "Superconjunto de JavaScript",
       },
@@ -150,6 +152,7 @@ export default {
         NETLIFY: "Plataforma de nuvem",
         REACTJS: "Biblioteca front-end JavaScript",
         REACT_CONTEXT: "Gerenciador de estado global",
+        REACT_HOOKS: "Reutilização de variáveis",
         REACT_ROUTER: "Biblioteca ReactJS de rotas",
         TYPESCRIPT: "Superconjunto de JavaScript",
       },
@@ -169,7 +172,7 @@ export default {
         CRUD_AXIOS:
           "Crud (create, read, update e delete) de usuários utilizando a biblioteca Axios.",
         REACT_DASHBOARD:
-          "Dashboard, mostrando mostrando algumas formas de visualizar os dados no frontend.",
+          "Dashboard, mostrando algumas formas de visualizar os dados no frontend.",
         SHOPPING_CARD:
           "Página básica de compras desenvolvido em ReactJS com Javascript.",
         SWAGGER:
