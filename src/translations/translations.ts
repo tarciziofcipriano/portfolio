@@ -58,6 +58,8 @@ export default {
           "Either something went wrong or the page doesn't exist.",
         PAGE_NOT_FOUND_TITLE: "Oops, sorry we can't find that page!",
         PORTFOLIO: "Portfolio",
+        PORTFOLIO_RESPONSIVE:
+        "Portfolio is fully responsive for web and mobile",
         PROJECTS: "Projects",
         SOME_TECHNOLOGIES_TITLE: "Some technologies used",
         TRAINING_AND_SKILLS: "Training and skills",
@@ -131,6 +133,8 @@ export default {
         PAGE_NOT_FOUND_TITLE:
           "¡Oops, lo siento, no podemos encontrar esa página!",
         PORTFOLIO: "Cartera",
+        PORTFOLIO_RESPONSIVE:
+          "Portfolio es totalmente receptivo para web y dispositivos móviles",
         PROJECTS: "Proyectos",
         SOME_TECHNOLOGIES_TITLE: "Algunas tecnologías utilizadas",
         TRAINING_AND_SKILLS: "Entrenamiento y habilidades",
@@ -205,6 +209,8 @@ export default {
         PAGE_NOT_FOUND_MESSAGE: "Ocorreu um erro ou esta página não existe.",
         PAGE_NOT_FOUND_TITLE: "Oops, desculpe, página não encontrada!",
         PORTFOLIO: "Portfólio",
+        PORTFOLIO_RESPONSIVE:
+          "O Portfólio está totalmente responsivo para web e mobile",
         PROJECTS: "Projetos",
         SOME_TECHNOLOGIES_TITLE: "Algumas tecnologías utilizadas",
         TRAINING_AND_SKILLS: "Formação e habilidades",

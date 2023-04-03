@@ -4,6 +4,7 @@ import {
   Filter1 as Filter1Icon,
   Filter2 as Filter2Icon,
   Filter3 as Filter3Icon,
+  Filter4 as Filter4Icon,
   TableView as TableViewIcon,
 } from "@mui/icons-material";
 import {
@@ -201,6 +202,12 @@ const AboutThePortfolio = () => {
               <ListItem sx={{ mt: 1 }}>
                 <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
                   <Filter3Icon color="primary" />
+                </ListItemAvatar>
+                <ListItemText primary={`${t("TEXT.PORTFOLIO_RESPONSIVE")}.`} />
+              </ListItem>
+              <ListItem sx={{ mt: 1 }}>
+                <ListItemAvatar sx={{ mt: mobile ? 0 : 0.8 }}>
+                  <Filter4Icon color="primary" />
                 </ListItemAvatar>
                 <ListItemText
                   primary={`${t("TEXT.LAST_UPDATE")}:`}
