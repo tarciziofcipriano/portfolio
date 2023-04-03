@@ -3,6 +3,7 @@ import React from "react";
 import "./index.css";
 import c3 from "c3";
 import { ThemeModeContext } from "../../../context/ThemeModeContext";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 interface GraphProps {
   title: string;
@@ -10,11 +11,12 @@ interface GraphProps {
 
 const Graph = ({ title }: GraphProps) => {
   const { theme } = React.useContext(ThemeModeContext);
+  const mobile = useIsMobile();
 
   React.useEffect(() => {
     c3.generate({
       padding: {
-        top: 10,
+        top: mobile ? 0 : 10,
       },
       data: {
         columns: [
@@ -41,7 +43,7 @@ const Graph = ({ title }: GraphProps) => {
         },
       },
     });
-  }, [title]);
+  }, [mobile, title]);
 
   return (
     <div id="chart" style={{ fill: theme === "light" ? "black" : "white" }} />

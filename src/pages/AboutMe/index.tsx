@@ -55,7 +55,7 @@ const AboutMe = () => {
         display="flex"
         justifyContent="center"
         container
-        pt={mobile ? "20%" : 11}
+        pt={11}
       >
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
           <Box display="flex" justifyContent="space-between" mb={3}>
@@ -63,7 +63,7 @@ const AboutMe = () => {
               <Box mt={0.45} alignSelf="center">
                 <PersonIcon fontSize="large" />
               </Box>
-              <Typography fontSize={mobile ? 28 : 36} fontWeight="bold" ml={1}>
+              <Typography fontSize={mobile ? 27 : 36} fontWeight="bold" ml={1}>
                 {t("TEXT.ABOUT_ME")}
               </Typography>
             </Box>

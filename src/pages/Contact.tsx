@@ -15,11 +15,9 @@ import {
   Typography,
 } from "@mui/material";
 import { ToastContext } from "../context/ToastContext";
-import useIsMobile from "../hooks/useIsMobile";
 
 const Contact = () => {
   const { t } = useTranslation();
-  const mobile = useIsMobile();
   const { toastSuccess, toastError } = React.useContext(ToastContext);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -61,7 +59,7 @@ const Contact = () => {
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Grid justifyContent="center" container pt={mobile ? "20%" : 11}>
+      <Grid justifyContent="center" container pt={11}>
         <Grid item xs={12} sm={12} md={8} lg={6} pl={1} pr={1}>
           <Box display="flex" mb={3}>
             <Box mt={0.45} alignSelf="center">
@@ -112,7 +110,7 @@ const Contact = () => {
               fontWeight: 500,
               ml: 1,
               mt: 3,
-              mb: 2,
+              mb: 3,
               maxWidth: 550,
             }}
           >

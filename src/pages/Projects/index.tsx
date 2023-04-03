@@ -1,7 +1,6 @@
 import { VideoLabel as VideoLabelIcon } from "@mui/icons-material";
 import { Box, Grid, Slide, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import useIsMobile from "../../hooks/useIsMobile";
 import Card from "./Card";
 
 interface CardDataProps {
@@ -13,7 +12,6 @@ interface CardDataProps {
 
 const Projects = () => {
   const { t } = useTranslation();
-  const mobile = useIsMobile();
 
   const cardsData: CardDataProps[] = [
     {
@@ -23,22 +21,16 @@ const Projects = () => {
       image: "/projects/react-dashboard.png",
     },
     {
-      title: "Crud-user-with-axios-mui",
-      description: t("CARD_DATA.CRUD_AXIOS"),
-      link: "https://github.com/tarciziofcipriano/Crud-user-with-axios-mui",
-      image: "/projects/crud-user-with-axios-mui.png",
+      title: "Fullstack-React-TS-MongoDB",
+      description: t("CARD_DATA.FULLSTACK_REACT"),
+      link: "https://github.com/tarciziofcipriano/Fullstack-React-TS-MongoDB",
+      image: "/projects/fullstack-react-ts-mongodb.png",
     },
     {
       title: "BlogApp-with-mongodb-node-bootstrap",
       description: t("CARD_DATA.BLOG_APP"),
       link: "https://github.com/tarciziofcipriano/BlogApp-mongodb-node-bootstrap",
       image: "/projects/brogapp-mongodb-node-bootstrap.png",
-    },
-    {
-      title: "Fullstack-React-TS-MongoDB",
-      description: t("CARD_DATA.FULLSTACK_REACT"),
-      link: "https://github.com/tarciziofcipriano/Fullstack-React-TS-MongoDB",
-      image: "/projects/fullstack-react-ts-mongodb.png",
     },
     {
       title: "Shopping-cart",
@@ -65,6 +57,12 @@ const Projects = () => {
       image: "/projects/swagger.png",
     },
     {
+      title: "Crud-user-with-axios-mui",
+      description: t("CARD_DATA.CRUD_AXIOS"),
+      link: "https://github.com/tarciziofcipriano/Crud-user-with-axios-mui",
+      image: "/projects/crud-user-with-axios-mui.png",
+    },
+    {
       title: "Basic-crud-Angular",
       description: t("CARD_DATA.CRUD_ANGULAR"),
       link: "https://github.com/tarciziofcipriano/Basic-crud-Angular",
@@ -74,7 +72,7 @@ const Projects = () => {
 
   return (
     <Slide direction="down" in mountOnEnter unmountOnExit>
-      <Grid justifyContent="center" container pt={mobile ? "20%" : 11}>
+      <Grid justifyContent="center" container pt={11}>
         <Grid item xs={12} sm={12} md={8} lg={9} pl={1} pr={1}>
           <Box display="flex" mb={4}>
             <Box mt={0.45} alignSelf="center">
