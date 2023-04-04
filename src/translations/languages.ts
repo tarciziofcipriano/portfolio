@@ -1,10 +1,10 @@
 import { LanguageCode, Languages } from "./types";
 
-const DEFAULT_LANGUAGE = "pt";
+const DEFAULT_LANGUAGE = "en";
 
 export const languages: Languages[] = [
-  { code: "pt", label: "Português" },
   { code: "en", label: "English" },
+  { code: "pt", label: "Português" },
   { code: "es", label: "Español" },
 ];
 
