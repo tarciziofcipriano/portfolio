@@ -44,6 +44,9 @@ export default {
         ABOUT_ME_DESC_TWO:
           "Front-End developer for over 3 years and exploring the Back-End at times.",
         ABOUT_THE_PORTFOLIO: "About the Portfolio",
+        ALL_PAGES_LANG:
+          "All pages can be changed to Portuguese, English and Spanish languages",
+        ALL_PAGES_THEME: "All pages can be changed to light and dark theme",
         CONTACT: "Contact",
         COMMENTS: "Comments",
         CURRICULUM: "Curriculum.pdf",
@@ -59,7 +62,7 @@ export default {
         PAGE_NOT_FOUND_TITLE: "Oops, sorry we can't find that page!",
         PORTFOLIO: "Portfolio",
         PORTFOLIO_RESPONSIVE:
-        "Portfolio is fully responsive for web and mobile",
+          "Portfolio is fully responsive for web and mobile",
         PROJECTS: "Projects",
         SOME_TECHNOLOGIES_TITLE: "Some technologies used",
         TRAINING_AND_SKILLS: "Training and skills",
@@ -119,6 +122,10 @@ export default {
         ABOUT_ME_DESC_TWO:
           "Desarrollador Front-End por más de 3 años y explorando el Back-End ocasionalmente.",
         ABOUT_THE_PORTFOLIO: "Sobre la Cartera",
+        ALL_PAGES_LANG:
+          "Todas las páginas se pueden cambiar a los idiomas portugués, inglés y español",
+        ALL_PAGES_THEME:
+          "Todas las páginas se pueden cambiar a tema claro y oscuro",
         CONTACT: "Contacto",
         COMMENTS: "Comentarios",
         CURRICULUM: "Currículum.pdf",
@@ -195,6 +202,10 @@ export default {
         ABOUT_ME_DESC_TWO:
           "Desenvolvedor Front-End há mais de 3 anos e explorando o Back-End em alguns momentos.",
         ABOUT_THE_PORTFOLIO: "Sobre o Portfólio",
+        ALL_PAGES_LANG:
+          "Todas as páginas podem ser alteradas para os idiomas Português, Inglês e Espanhol",
+        ALL_PAGES_THEME:
+          "Todas as páginas podem ser alteradas para o tema claro e escuro",
         CONTACT: "Contato",
         COMMENTS: "Observações",
         CURRICULUM: "Currículo.pdf",
