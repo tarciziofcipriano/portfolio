@@ -1,4 +1,12 @@
-import { AppBar, Box, IconButton, Tab, Tabs, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  IconButton,
+  Tab,
+  Tabs,
+  Toolbar,
+  Tooltip,
+} from "@mui/material";
 import { Home as HomeIcon, Menu as MenuIcon } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { HOME } from "../routes/constants";
@@ -7,6 +15,7 @@ import React, { Context } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import { ThemeModeContext } from "../context/ThemeModeContext";
 import { MenuOptionContext } from "../context/MenuOptionContext";
+import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   handleDrawerToggle: () => void;
@@ -24,6 +33,7 @@ const Header = ({
 }: HeaderProps) => {
   const colorMode = React.useContext(colorModeContext);
   const { theme } = React.useContext(ThemeModeContext);
+  const { t } = useTranslation();
   const { menuOption, setMenuOption } = React.useContext(MenuOptionContext);
 
   const handleChange = (_: any, value: number) => {
@@ -103,7 +113,9 @@ const Header = ({
             ))}
           </Tabs>
           <LanguageSelector isMenu />
-          <ThemeSwitch onClick={colorMode.toggleColorMode} />
+          <Tooltip title={t("TEXT.THEME")}>
+            <ThemeSwitch onClick={colorMode.toggleColorMode} />
+          </Tooltip>
         </Box>
       </Toolbar>
     </AppBar>

@@ -16,6 +16,7 @@ import {
   StepContent,
   StepLabel,
   Stepper,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -81,13 +82,13 @@ const AboutMe = () => {
             elevation={3}
           >
             <Stepper orientation="vertical">
-              {training.map((t) => (
-                <Step key={t.label} active={true}>
-                  <StepLabel>{t.label}:</StepLabel>
+              {training.map((v) => (
+                <Step key={v.label} active={true}>
+                  <StepLabel>{v.label}:</StepLabel>
                   <StepContent sx={{ pl: mobile ? "11px" : "20px" }}>
                     <List dense={true}>
-                      {t.description &&
-                        t.description.map((v) => (
+                      {v.description &&
+                        v.description.map((v) => (
                           <ListItem
                             key={v.title}
                             sx={{ mt: 0.5, p: 0, pb: mobile ? 2 : 0 }}
@@ -99,15 +100,19 @@ const AboutMe = () => {
                             </ListItemAvatar>
                             {v.title}
                             {v.button && (
-                              <Button
-                                onClick={handlePrintPdf}
-                                size="small"
-                                variant="contained"
-                                sx={{ mt: 1 }}
-                                startIcon={<DownloadOutlinedIcon />}
+                              <Tooltip
+                                title={`${t("TEXT.DOWNLOAD")} ${v.button}`}
                               >
-                                {v.button}
-                              </Button>
+                                <Button
+                                  onClick={handlePrintPdf}
+                                  size="small"
+                                  variant="contained"
+                                  sx={{ mt: 1 }}
+                                  startIcon={<DownloadOutlinedIcon />}
+                                >
+                                  {v.button}
+                                </Button>
+                              </Tooltip>
                             )}
                           </ListItem>
                         ))}
