@@ -9,9 +9,6 @@ export default {
         MUI: "ReactJS component library",
         NETLIFY: "Cloud platform",
         REACTJS: "JavaScript front-end library",
-        REACT_CONTEXT: "Global state manager",
-        REACT_HOOKS: "Variable reuse",
-        REACT_ROUTER: "ReactJS routes library",
         TYPESCRIPT: "JavaScript superset",
       },
       BUTTON: {
@@ -91,9 +88,6 @@ export default {
         MUI: "Biblioteca de componentes ReactJS",
         NETLIFY: "Plataforma en la nube",
         REACTJS: "Biblioteca frontal de JavaScript",
-        REACT_CONTEXT: "Gerente de estado global",
-        REACT_HOOKS: "Reutilización de variables",
-        REACT_ROUTER: "Biblioteca de rutas de ReactJS",
         TYPESCRIPT: "Superconjunto de JavaScript",
       },
       BUTTON: {
@@ -175,9 +169,6 @@ export default {
         MUI: "Biblioteca de componentes ReactJS",
         NETLIFY: "Plataforma de nuvem",
         REACTJS: "Biblioteca front-end JavaScript",
-        REACT_CONTEXT: "Gerenciador de estado global",
-        REACT_HOOKS: "Reutilização de variáveis",
-        REACT_ROUTER: "Biblioteca ReactJS de rotas",
         TYPESCRIPT: "Superconjunto de JavaScript",
       },
       BUTTON: {
