@@ -51,30 +51,6 @@ const AboutThePortfolio = () => {
         description: t("ABOUT_THE_PORTFOLIO.REACTJS"),
       },
       {
-        title: "React Router",
-        link: "https://reactrouter.com/en/main",
-        icon: <CheckIcon />,
-        description: t("ABOUT_THE_PORTFOLIO.REACT_ROUTER"),
-      },
-      {
-        title: "React Context",
-        link: "https://react.dev/reference/react#context-hooks",
-        icon: <CheckIcon />,
-        description: t("ABOUT_THE_PORTFOLIO.REACT_CONTEXT"),
-      },
-      {
-        title: "React i18next",
-        link: "https://react.i18next.com/",
-        icon: <CheckIcon />,
-        description: t("ABOUT_THE_PORTFOLIO.I18NEXT"),
-      },
-      {
-        title: "React Hooks",
-        link: "https://react.dev/learn#using-hooks",
-        icon: <CheckIcon />,
-        description: t("ABOUT_THE_PORTFOLIO.REACT_HOOKS"),
-      },
-      {
         title: "Material-UI",
         link: "https://mui.com/",
         icon: <CheckIcon />,
@@ -119,7 +95,7 @@ const AboutThePortfolio = () => {
               {t("TEXT.ABOUT_THE_PORTFOLIO")}
             </Typography>
           </Box>
-          <Paper sx={{ p: 4, mb: 3, borderRadius: 3 }} elevation={3}>
+          <Paper sx={{ p: 4, pb: 2.5, mb: 3, borderRadius: 3 }} elevation={3}>
             <Box>
               <Typography
                 sx={{ mb: 2 }}
