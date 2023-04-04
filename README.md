@@ -56,3 +56,11 @@ npm start
 ```
 
 O navegador vai abrir com o projeto.
+
+## Netlify
+
+A [Netlify](https://www.netlify.com/) é especializada em soluções avançadas de hospedagem e automação na web para empresas.
+
+Ela foi utilizado para a hospedagem do repositório do Portfólio.
+
+Link: [Portfólio](https://main--fluffy-kitsune-22aca3.netlify.app/)
