@@ -43,10 +43,16 @@ const AboutMe = () => {
       label: t("TEXT.TRAINING_AND_SKILLS"),
       description: [
         {
-          title: t("TEXT.ABOUT_ME_DESC_ONE"),
+          title: `${t("TEXT.GRADUATION")};`,
         },
         {
-          title: t("TEXT.ABOUT_ME_DESC_TWO"),
+          title: `${t("TEXT.POSTGRADUATE")};`,
+        },
+        {
+          title: `${t("TEXT.FRONT_END")};`,
+        },
+        {
+          title: `${t("TEXT.BACK_END")};`,
         },
         {
           button: t("TEXT.CURRICULUM"),

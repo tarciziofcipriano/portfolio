@@ -40,14 +40,11 @@ export default {
       },
       TEXT: {
         ABOUT_ME: "About me",
-        ABOUT_ME_DESC_ONE:
-          "I have a degree in Systems Analysis and Development and a postgraduate degree in Strategic Analysis and Data Science.",
-        ABOUT_ME_DESC_TWO:
-          "Front-End developer for over 3 years and exploring the Back-End at times.",
         ABOUT_THE_PORTFOLIO: "About the Portfolio",
         ALL_PAGES_LANG:
           "All pages can be changed to Portuguese, English or Spanish languages",
         ALL_PAGES_THEME: "All pages can be changed to light or dark theme",
+        BACK_END: "Exploring the Back-End in a few moments",
         CONTACT: "Contact",
         COMMENTS: "Comments",
         CURRICULUM: "Curriculum.pdf",
@@ -55,6 +52,8 @@ export default {
         DASHBOARD_SUBTITLE:
           "I'm a web developer, with main knowledge in technologies: ReactJS and TypeScript.",
         DOWNLOAD: "Download",
+        FRONT_END: "Front-End Developer for over 3 years",
+        GRADUATION: "Graduation in Systems Analysis and Development",
         LANGUAGES: "Languages",
         LAST_UPDATE: "Last update",
         MAIN_TECHNOLOGIES: "Main technologies I use",
@@ -66,6 +65,7 @@ export default {
         PORTFOLIO: "Portfolio",
         PORTFOLIO_RESPONSIVE:
           "Portfolio is fully responsive for web and mobile",
+        POSTGRADUATE: "Postgraduate in Strategic Analysis and Data Science",
         PROJECTS: "Projects",
         SOME_TECHNOLOGIES_TITLE: "Some technologies used",
         THEME: "Theme",
@@ -122,15 +122,12 @@ export default {
       },
       TEXT: {
         ABOUT_ME: "Sobre mi",
-        ABOUT_ME_DESC_ONE:
-          "Soy licenciado en Análisis y Desarrollo de Sistemas y posgrado en Análisis Estratégico y Data Science.",
-        ABOUT_ME_DESC_TWO:
-          "Desarrollador Front-End por más de 3 años y explorando el Back-End ocasionalmente.",
         ABOUT_THE_PORTFOLIO: "Sobre la Cartera",
         ALL_PAGES_LANG:
           "Todas las páginas se pueden cambiar a los idiomas portugués, inglés o español",
         ALL_PAGES_THEME:
           "Todas las páginas se pueden cambiar a tema claro o oscuro",
+        BACK_END: "Explorando el Back-End en unos momentos",
         CONTACT: "Contacto",
         COMMENTS: "Comentarios",
         CURRICULUM: "Currículum.pdf",
@@ -138,6 +135,8 @@ export default {
         DASHBOARD_SUBTITLE:
           "Soy desarrollador web, con conocimiento principal en tecnologías: ReactJS y TypeScript.",
         DOWNLOAD: "Descargar",
+        FRONT_END: "Desarrollador Front-End por más de 3 años",
+        GRADUATION: "Grado en Análisis y Desarrollo de Sistemas",
         LANGUAGES: "Idiomas",
         LAST_UPDATE: "Última actualización",
         MAIN_TECHNOLOGIES: "Principales tecnologías que utilizo",
@@ -149,6 +148,7 @@ export default {
         PORTFOLIO: "Cartera",
         PORTFOLIO_RESPONSIVE:
           "Portfolio es totalmente receptivo para web y dispositivos móviles",
+        POSTGRADUATE: "Posgraduación en Análisis Estratégico y Data Science",
         PROJECTS: "Proyectos",
         SOME_TECHNOLOGIES_TITLE: "Algunas tecnologías utilizadas",
         THEME: "Tema",
@@ -206,15 +206,12 @@ export default {
       },
       TEXT: {
         ABOUT_ME: "Sobre mim",
-        ABOUT_ME_DESC_ONE:
-          "Sou formado em Análise e Desenvolvimento de Sistemas e com Pós Graduação em Análise Estratégica e Ciências de Dados.",
-        ABOUT_ME_DESC_TWO:
-          "Desenvolvedor Front-End há mais de 3 anos e explorando o Back-End em alguns momentos.",
         ABOUT_THE_PORTFOLIO: "Sobre o Portfólio",
         ALL_PAGES_LANG:
           "Todas as páginas podem ser alteradas para os idiomas Português, Inglês ou Espanhol",
         ALL_PAGES_THEME:
           "Todas as páginas podem ser alteradas para o tema claro ou escuro",
+        BACK_END: "Explorando o Back-End em alguns momentos",
         CONTACT: "Contato",
         COMMENTS: "Observações",
         CURRICULUM: "Currículo.pdf",
@@ -222,7 +219,8 @@ export default {
         DASHBOARD_SUBTITLE:
           "Sou desenvolvedor web, com conhecimento principal nas tecnologias: ReactJS e TypeScript.",
         DOWNLOAD: "Download",
-        FULL_CURRICULUM: "Currículo Completo",
+        FRONT_END: "Desenvolvedor Front-End há mais de 3 anos",
+        GRADUATION: "Graduação em Análise e Desenvolvimento de Sistemas",
         LANGUAGES: "Linguagens",
         LAST_UPDATE: "Última atualização",
         MAIN_TECHNOLOGIES: "Principais tecnologias que utilizo",
@@ -233,6 +231,8 @@ export default {
         PORTFOLIO: "Portfólio",
         PORTFOLIO_RESPONSIVE:
           "O Portfólio está totalmente responsivo para web e mobile",
+        POSTGRADUATE:
+          "Pós Graduação em Análise Estratégica e Ciências de Dados",
         PROJECTS: "Projetos",
         SOME_TECHNOLOGIES_TITLE: "Algumas tecnologías utilizadas",
         THEME: "Tema",
