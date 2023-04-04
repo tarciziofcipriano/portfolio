@@ -35,6 +35,16 @@ npm install
 
 > Este passo só precisa ser feito na primeira vez que rodar o projeto
 
+### Build do projeto
+
+Para fazer o build execute:
+
+```bash
+yarn build
+# ou
+npm build
+```
+
 ### Iniciando o projeto
 
 Para iniciar execute:
@@ -51,6 +61,6 @@ O navegador vai abrir com o projeto.
 
 A [Netlify](https://www.netlify.com/) é especializada em soluções avançadas de hospedagem e automação na web para empresas.
 
-Ela foi utilizado para a hospedagem do repositório do Portfólio.
+Ela foi utilizada para a hospedagem do repositório do Portfólio.
 
 Link: [Portfólio](https://main--fluffy-kitsune-22aca3.netlify.app/)
