@@ -1,5 +1,6 @@
 import React from "react";
 
+import { KeyboardArrowDown as KeyboardArrowDownIcon } from "@mui/icons-material";
 import { Button, Menu, MenuItem } from "@mui/material";
 import i18n from "i18next";
 
@@ -59,6 +60,7 @@ const LanguageSelector = ({ isMenu }: LanguageSelectorProps) => {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         sx={{ fontSize: isMenu ? 12 : 13, pr: 0, pl: 0 }}
+        endIcon={<KeyboardArrowDownIcon />}
       >
         <img
           loading="lazy"
