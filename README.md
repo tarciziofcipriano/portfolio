@@ -35,16 +35,6 @@ npm install
 
 > Este passo só precisa ser feito na primeira vez que rodar o projeto
 
-## Rodando o projeto em modo desenvolvedor
-
-### Preparando a IDE
-
-É recomendável utilizar o [Visual Studio Code](https://code.visualstudio.com/) e instalar as seguintes extensões:
-
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-
 ### Iniciando o projeto
 
 Para iniciar execute:
