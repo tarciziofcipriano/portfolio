@@ -87,6 +87,12 @@ const AboutThePortfolio = () => {
         description: t("ABOUT_THE_PORTFOLIO.TYPESCRIPT"),
       },
       {
+        title: "C3.js",
+        link: "https://c3js.org/",
+        icon: <CheckIcon />,
+        description: t("ABOUT_THE_PORTFOLIO.C3"),
+      },
+      {
         title: "EmailJS",
         link: "https://www.emailjs.com/",
         icon: <CheckIcon />,

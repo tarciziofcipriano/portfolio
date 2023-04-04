@@ -3,6 +3,7 @@ export default {
   en: {
     translation: {
       ABOUT_THE_PORTFOLIO: {
+        C3: "Graphics library",
         EMAILJS: "Email sending library",
         I18NEXT: "Internationalization library",
         MUI: "ReactJS component library",
@@ -84,6 +85,7 @@ export default {
   es: {
     translation: {
       ABOUT_THE_PORTFOLIO: {
+        C3: "Biblioteca de gráficos",
         EMAILJS: "Biblioteca de envío de correo electrónico",
         I18NEXT: "Biblioteca de internacionalización",
         MUI: "Biblioteca de componentes ReactJS",
@@ -167,6 +169,7 @@ export default {
   pt: {
     translation: {
       ABOUT_THE_PORTFOLIO: {
+        C3: "Biblioteca de gráficos",
         EMAILJS: "Biblioteca de envio de e-mails",
         I18NEXT: "Biblioteca de internacionalização",
         MUI: "Biblioteca de componentes ReactJS",

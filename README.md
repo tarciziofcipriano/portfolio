@@ -13,6 +13,7 @@ Este é a estrutura do portfólio de Tarcizio Cipriano
 - [React Hooks](https://react.dev/learn#using-hooks)
 - [Material-UI](https://mui.com/)
 - [Typescript](https://www.typescriptlang.org/)
+- [C3.js](https://c3js.org/)
 - [EmailJS](https://www.emailjs.com/)
 - [Netlify](https://www.netlify.com/)
 - [Box Shadows](https://getcssscan.com/css-box-shadow-examples)
