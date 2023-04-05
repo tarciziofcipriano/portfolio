@@ -27,7 +27,7 @@ const Projects = () => {
       image: "/projects/fullstack-react-ts-mongodb.png",
     },
     {
-      title: "BlogApp-with-mongodb-node-bootstrap",
+      title: "BlogApp-with-mongodb-node",
       description: t("CARD_DATA.BLOG_APP"),
       link: "https://github.com/tarciziofcipriano/BlogApp-mongodb-node-bootstrap",
       image: "/projects/brogapp-mongodb-node-bootstrap.png",

@@ -53,12 +53,17 @@ const Card = ({ title, description, link, image }: CardDataProps) => {
       >
         <CardMedia
           component="img"
-          height="130vh"
+          height="160vh"
           image={image}
           sx={{ backgroundSize: "cover" }}
         />
         <CardContent>
-          <Typography gutterBottom fontSize={20} component="div">
+          <Typography
+            gutterBottom
+            fontSize={17}
+            fontWeight={500}
+            component="div"
+          >
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
