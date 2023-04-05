@@ -53,11 +53,12 @@ const Header = ({
             flexGrow: 1,
             display: { sm: "none" },
             placeContent: "start",
+            maxWidth: 10,
           }}
         >
           <MenuIcon />
         </IconButton>
-        <Box sx={{ display: { sm: "none" } }}>
+        <Box sx={{ display: { sm: "none" } }} ml="auto">
           <LanguageSelector isMenu />
         </Box>
         <Box sx={{ display: { sm: "none" } }}>
