@@ -44,6 +44,8 @@ export default {
         BACK_END: "Exploring the Back-End in a few moments",
         CONTACT: "Contact",
         COMMENTS: "Comments",
+        CONTACT_MSG:
+          "Please send a message below and I will get back to you shortly!",
         CURRICULUM: "Curriculum.pdf",
         DASHBOARD_TITLE: "Hi there, my name is Tarcizio Cipriano",
         DASHBOARD_SUBTITLE:
@@ -124,6 +126,8 @@ export default {
         BACK_END: "Explorando el Back-End en unos momentos",
         CONTACT: "Contacto",
         COMMENTS: "Comentarios",
+        CONTACT_MSG:
+          "¡Envíe un mensaje a continuación y me pondré en contacto con usted en breve!",
         CURRICULUM: "Currículum.pdf",
         DASHBOARD_TITLE: "Hola, mi nombre es Tarcizio Cipriano",
         DASHBOARD_SUBTITLE:
@@ -205,6 +209,8 @@ export default {
         BACK_END: "Explorando o Back-End em alguns momentos",
         CONTACT: "Contato",
         COMMENTS: "Observações",
+        CONTACT_MSG:
+          "Por favor, envie uma mensagem abaixo e entrarei em contato com você em breve!",
         CURRICULUM: "Currículo.pdf",
         DASHBOARD_TITLE: "Olá, me chamo Tarcizio Cipriano",
         DASHBOARD_SUBTITLE:

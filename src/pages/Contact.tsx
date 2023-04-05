@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 
 import {
   ContactMail as ContactMailIcon,
+  EmailOutlined as EmailOutlinedIcon,
+  PersonOutline as PersonOutlineIcon,
   Send as SendIcon,
 } from "@mui/icons-material";
 import {
@@ -12,6 +14,7 @@ import {
   Box,
   Button,
   Grid,
+  InputAdornment,
   Paper,
   Slide,
   TextField,
@@ -91,6 +94,9 @@ const Contact = () => {
             }}
             elevation={3}
           >
+            <Typography pb={4} textAlign="center" variant="subtitle2">
+              {t("TEXT.CONTACT_MSG")}
+            </Typography>
             <form ref={form} onSubmit={sendEmail}>
               <Box display="grid">
                 <CustomTextField
@@ -99,6 +105,13 @@ const Contact = () => {
                   color="primary"
                   onChange={(e) => handleChangeName(e.target.value)}
                   sx={{ width: "100%" }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <PersonOutlineIcon />
+                      </InputAdornment>
+                    ),
+                  }}
                 />
                 <CustomTextField
                   label="Email"
@@ -106,6 +119,13 @@ const Contact = () => {
                   color="primary"
                   onChange={(e) => handleChangeEmail(e.target.value)}
                   sx={{ mt: 2, mb: 2, width: "100%" }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <EmailOutlinedIcon />
+                      </InputAdornment>
+                    ),
+                  }}
                 />
                 <CustomTextField
                   label={t("TEXT.MESSAGE")}
