@@ -95,17 +95,20 @@ const AboutThePortfolio = () => {
               {t("TEXT.ABOUT_THE_PORTFOLIO")}
             </Typography>
           </Box>
-          <Paper sx={{ p: 4, pb: 2.5, mb: 3, borderRadius: 3 }} elevation={3}>
+          <Paper
+            sx={{ p: 4, pr: mobile ? 0 : 4, pb: 3.5, mb: 3, borderRadius: 3 }}
+            elevation={3}
+          >
             <Box>
               <Typography
-                sx={{ mb: 2 }}
-                fontSize={mobile ? 17 : 20}
+                sx={{ mb: 1 }}
+                fontSize={mobile ? 18 : 20}
                 fontWeight={500}
                 component="div"
               >
                 {descriptions.label}:
               </Typography>
-              <List dense={true}>
+              <List dense={true} sx={{ pr: mobile ? 3 : 0 }}>
                 {descriptions.description.map((v) => (
                   <ListItem key={v.title}>
                     <ListItemAvatar>

@@ -231,7 +231,7 @@ export default {
         POSTGRADUATE:
           "Pós Graduação em Análise Estratégica e Ciências de Dados",
         PROJECTS: "Projetos",
-        SOME_TECHNOLOGIES_TITLE: "Algumas tecnologías utilizadas",
+        SOME_TECHNOLOGIES_TITLE: "Algumas tecnologias utilizadas",
         THEME: "Tema",
         TRAINING_AND_SKILLS: "Formação e habilidades",
         YEARS_OF_EXPERIENCE: "Anos de experiência",
