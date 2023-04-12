@@ -51,6 +51,12 @@ const Projects = () => {
       image: "/projects/ticket-in-typescript.png",
     },
     {
+      title: "React-Redux-example",
+      description: t("CARD_DATA.REACT_REDUX"),
+      link: "https://github.com/tarciziofcipriano/React-Redux-example",
+      image: "/projects/react-Redux-example.png",
+    },
+    {
       title: "Example-swagger-api",
       description: t("CARD_DATA.SWAGGER"),
       link: "https://github.com/tarciziofcipriano/Example-swagger-api",

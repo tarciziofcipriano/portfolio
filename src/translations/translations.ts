@@ -28,6 +28,8 @@ export default {
           "React fullstack structure, with the backend in Javascript and the frontend in ReactJS and Typescript.",
         REACT_DASHBOARD:
           "Dashboard, showing showing some ways to visualize the data in the frontend.",
+        REACT_REDUX:
+          "Basic structure showing how to use React Redux technology.",
         SHOPPING_CARD:
           "Basic shopping page developed in ReactJS with Javascript.",
         SWAGGER:
@@ -109,6 +111,8 @@ export default {
           "Crud (crear, leer, actualizar y eliminar) de usuarios que utilizan la biblioteca Axios.",
         REACT_DASHBOARD:
           "Tablero, que muestra algunas formas de visualizar los datos en la interfaz.",
+        REACT_REDUX:
+          "Estructura básica que muestra cómo usar la tecnología React Redux.",
         SHOPPING_CARD:
           "Página básica de compras desarrollada en ReactJS con Javascript.",
         SWAGGER:
@@ -192,6 +196,8 @@ export default {
           "Crud (create, read, update e delete) de usuários utilizando a biblioteca Axios.",
         REACT_DASHBOARD:
           "Dashboard, mostrando algumas formas de visualizar os dados no frontend.",
+        REACT_REDUX:
+          "Estrutura básica mostrando como utilizar a tecnologia React Redux.",
         SHOPPING_CARD:
           "Página básica de compras desenvolvido em ReactJS com Javascript.",
         SWAGGER:
