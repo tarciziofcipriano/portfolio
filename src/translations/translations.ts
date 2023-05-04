@@ -26,6 +26,8 @@ export default {
           "Crud (create, read, update and delete) of users using the Axios library.",
         FULLSTACK_REACT:
           "React fullstack structure, with the backend in Javascript and the frontend in ReactJS and Typescript.",
+        NEXTJS:
+          "Simple structure of a project using the Next.js framework",
         REACT_DASHBOARD:
           "Dashboard, showing showing some ways to visualize the data in the frontend.",
         REACT_REDUX:
@@ -103,12 +105,14 @@ export default {
           "Billet realizado en ReactJS con Typescript, con código de barras.",
         BLOG_APP:
           "Blog, con el frontend desarrollado con Bootstrap y el backend con Javascript.",
-        FULLSTACK_REACT:
-          "Estructura fullstack de React, con el backend en Javascript y el frontend en ReactJS y Typescript.",
         CRUD_ANGULAR:
           "Un proyecto sencillo que muestra un Crud de productos realizados en Angular.",
         CRUD_AXIOS:
           "Crud (crear, leer, actualizar y eliminar) de usuarios que utilizan la biblioteca Axios.",
+        FULLSTACK_REACT:
+          "Estructura fullstack de React, con el backend en Javascript y el frontend en ReactJS y Typescript.",
+        NEXTJS:
+          "Estructura simple de un proyecto usando el framework Next.js",
         REACT_DASHBOARD:
           "Tablero, que muestra algunas formas de visualizar los datos en la interfaz.",
         REACT_REDUX:
@@ -188,12 +192,14 @@ export default {
           "Boleto feito em ReactJS com Typescript, com código de barras.",
         BLOG_APP:
           "Blog, com o frontend desenvolvido com Bootstrap e backend com Javascript.",
-        FULLSTACK_REACT:
-          "Estrutura fullstack React, com o backend em Javascript e o frontend em ReactJS e Typescript.",
         CRUD_ANGULAR:
           "Um simples projeto mostrando um Crud de produtos feito em Angular.",
         CRUD_AXIOS:
           "Crud (create, read, update e delete) de usuários utilizando a biblioteca Axios.",
+        FULLSTACK_REACT:
+          "Estrutura fullstack React, com o backend em Javascript e o frontend em ReactJS e Typescript.",
+        NEXTJS:
+          "Simples estrutura de um projeto utilizando o framework Next.js",
         REACT_DASHBOARD:
           "Dashboard, mostrando algumas formas de visualizar os dados no frontend.",
         REACT_REDUX:

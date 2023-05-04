@@ -1,1 +1,1 @@
-export const portfolioVersion = "12/04/2023"
+export const portfolioVersion = "04/05/2023"

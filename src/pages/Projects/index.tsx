@@ -57,6 +57,12 @@ const Projects = () => {
       image: "/projects/react-Redux-example.png",
     },
     {
+      title: "Next-Basic-Structure",
+      description: t("CARD_DATA.NEXTJS"),
+      link: "https://github.com/tarciziofcipriano/Next-Basic-Structure",
+      image: "/projects/next-basic-structure.png",
+    },
+    {
       title: "Example-swagger-api",
       description: t("CARD_DATA.SWAGGER"),
       link: "https://github.com/tarciziofcipriano/Example-swagger-api",
