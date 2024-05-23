@@ -20,11 +20,10 @@ const Graph = ({ title }: GraphProps) => {
       },
       data: {
         columns: [
-          ["ReactJS", 3],
-          ["Typescript", 3],
-          ["NodeJS", 3],
-          ["Git", 3],
-          ["Material UI", 1],
+          ["ReactJS", 4],
+          ["Typescript", 4],
+          ["Git", 4],
+          ["Material UI", 2],
         ],
         type: "donut",
       },

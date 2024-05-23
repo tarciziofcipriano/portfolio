@@ -55,7 +55,7 @@ export default {
         DASHBOARD_SUBTITLE:
           "I'm a web developer, with main knowledge in technologies: ReactJS and TypeScript.",
         DOWNLOAD: "Download",
-        FRONT_END: "Front-End Developer for over 3 years",
+        FRONT_END: "Front-End Developer for over 4 years",
         GRADUATION: "Graduation in Systems Analysis and Development",
         LANGUAGES: "Languages",
         LAST_UPDATE: "Last update",
@@ -141,7 +141,7 @@ export default {
         DASHBOARD_SUBTITLE:
           "Soy desarrollador web, con conocimiento principal en tecnologías: ReactJS y TypeScript.",
         DOWNLOAD: "Descargar",
-        FRONT_END: "Desarrollador Front-End por más de 3 años",
+        FRONT_END: "Desarrollador Front-End por más de 4 años",
         GRADUATION: "Grado en Análisis y Desarrollo de Sistemas",
         LANGUAGES: "Idiomas",
         LAST_UPDATE: "Última actualización",
@@ -228,7 +228,7 @@ export default {
         DASHBOARD_SUBTITLE:
           "Sou desenvolvedor web, com conhecimento principal nas tecnologias: ReactJS e TypeScript.",
         DOWNLOAD: "Download",
-        FRONT_END: "Desenvolvedor Front-End há mais de 3 anos",
+        FRONT_END: "Desenvolvedor Front-End há mais de 4 anos",
         GRADUATION: "Graduação em Análise e Desenvolvimento de Sistemas",
         LANGUAGES: "Linguagens",
         LAST_UPDATE: "Última atualização",
