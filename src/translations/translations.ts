@@ -26,8 +26,7 @@ export default {
           "Crud (create, read, update and delete) of users using the Axios library.",
         FULLSTACK_REACT:
           "React fullstack structure, with the backend in Javascript and the frontend in ReactJS and Typescript.",
-        NEXTJS:
-          "Simple structure of a project using the Next.js framework",
+        NEXTJS: "Simple structure of a project using the Next.js framework",
         REACT_DASHBOARD:
           "Dashboard, showing showing some ways to visualize the data in the frontend.",
         REACT_REDUX:
@@ -69,6 +68,8 @@ export default {
         PORTFOLIO_RESPONSIVE:
           "Portfolio is fully responsive for web and mobile",
         POSTGRADUATE: "Postgraduate in Strategic Analysis and Data Science",
+        POSTGRADUATE_2:
+          "Postgraduate in Artificial Intelligence and Data Science",
         PROJECTS: "Projects",
         SOME_TECHNOLOGIES_TITLE: "Some technologies used",
         THEME: "Theme",
@@ -111,8 +112,7 @@ export default {
           "Crud (crear, leer, actualizar y eliminar) de usuarios que utilizan la biblioteca Axios.",
         FULLSTACK_REACT:
           "Estructura fullstack de React, con el backend en Javascript y el frontend en ReactJS y Typescript.",
-        NEXTJS:
-          "Estructura simple de un proyecto usando el framework Next.js",
+        NEXTJS: "Estructura simple de un proyecto usando el framework Next.js",
         REACT_DASHBOARD:
           "Tablero, que muestra algunas formas de visualizar los datos en la interfaz.",
         REACT_REDUX:
@@ -154,7 +154,9 @@ export default {
         PORTFOLIO: "Cartera",
         PORTFOLIO_RESPONSIVE:
           "Portfolio es totalmente receptivo para web y dispositivos móviles",
-        POSTGRADUATE: "Posgraduación en Análisis Estratégico y Data Science",
+        POSTGRADUATE: "Posgraduación en Análisis Estratégico y Ciencia de los Datos",
+        POSTGRADUATE_2:
+          "Posgraduación en Inteligencia Artificial y Ciencia de los Datos",
         PROJECTS: "Proyectos",
         SOME_TECHNOLOGIES_TITLE: "Algunas tecnologías utilizadas",
         THEME: "Tema",
@@ -242,6 +244,8 @@ export default {
           "O Portfólio está totalmente responsivo para web e mobile",
         POSTGRADUATE:
           "Pós Graduação em Análise Estratégica e Ciências de Dados",
+        POSTGRADUATE_2:
+          "Pós Graduação em Inteligência Artificial e Ciências de Dados",
         PROJECTS: "Projetos",
         SOME_TECHNOLOGIES_TITLE: "Algumas tecnologias utilizadas",
         THEME: "Tema",

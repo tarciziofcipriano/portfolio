@@ -49,10 +49,10 @@ const AboutMe = () => {
         title: `${t("TEXT.POSTGRADUATE")};`,
       },
       {
-        title: `${t("TEXT.FRONT_END")};`,
+        title: `${t("TEXT.POSTGRADUATE_2")};`,
       },
       {
-        title: `${t("TEXT.BACK_END")};`,
+        title: `${t("TEXT.FRONT_END")};`,
       },
       {
         button: t("TEXT.CURRICULUM"),
